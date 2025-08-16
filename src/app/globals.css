@@ -1,0 +1,93 @@
+@import 'tailwindcss';
+
+:root {
+	--black: #000000;
+	--white: #ffffff;
+
+	--orange-50: #ff9500;
+	--orange-70: #ffbf66;
+	--orange-75: #ffca80;
+	--orange-80: #ffd499;
+	--orange-90: #ffeacc;
+	--orange-95: #fff4e5;
+	--orange-97: #fff9f0;
+	--orange-99: #fffdfa;
+
+	--white-90: #e4e4e7;
+	--white-95: #f1f1f3;
+	--white-97: #f7f7f8;
+	--white-99: #fcfcfd;
+
+	--grey-10: #191919;
+	--grey-15: #262626;
+	--grey-20: #333333;
+	--grey-30: #4c4c4d;
+	--grey-35: #59595a;
+	--grey-40: #656567;
+	--grey-60: #98989a;
+	--grey-70: #b3b3b3;
+
+	--danger: #d84c00;
+}
+
+@theme {
+	--color-black: var(--black);
+	--color-white: var(--white);
+
+	--color-orange-50: var(--orange-50);
+	--color-orange-70: var(--orange-70);
+	--color-orange-75: var(--orange-75);
+	--color-orange-80: var(--orange-80);
+	--color-orange-90: var(--orange-90);
+	--color-orange-95: var(--orange-95);
+	--color-orange-97: var(--orange-97);
+	--color-orange-99: var(--orange-99);
+
+	--color-white-90: var(--white-90);
+	--color-white-95: var(--white-95);
+	--color-white-97: var(--white-97);
+	--color-white-99: var(--white-99);
+
+	--color-grey-10: var(--grey-10);
+	--color-grey-15: var(--grey-15);
+	--color-grey-20: var(--grey-20);
+	--color-grey-30: var(--grey-30);
+	--color-grey-35: var(--grey-35);
+	--color-grey-40: var(--grey-40);
+	--color-grey-60: var(--grey-60);
+	--color-grey-70: var(--grey-70);
+
+	--color-danger: var(--danger);
+
+	--breakpoint-xs: 30rem;
+	--breakpoint-lg-xl: 72rem;
+
+	--font-inter: var(--font-inter), 'Inter', sans-serif;
+	--font-be-vietnam-pro: var(--font-be-vietnam-pro), 'Be Vietnam Pro',
+		sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: var(--background);
+	color: var(--color-text);
+	font-family: var(--font-be-vietnam-pro), var(--font-inter) sans-serif;
+
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+* {
+	scroll-behavior: smooth;
+}
