@@ -74,7 +74,7 @@ html {
 body {
 	background: var(--background);
 	color: var(--color-text);
-	font-family: var(--font-be-vietnam-pro), var(--font-inter) sans-serif;
+	font-family: var(--font-be-vietnam-pro), sans-serif;
 
 	min-height: 100vh;
 	display: flex;

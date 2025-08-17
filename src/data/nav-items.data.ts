@@ -1,16 +1,25 @@
+import { ROUTES } from '@/constants/routes.constants'
 import type { INavItem } from '@/types/nav.interface'
 
 export const navItemsData: INavItem[] = [
 	{
-		href: '/',
-		label: '',
+		href: ROUTES.HOME,
+		label: 'Home'
 	},
 	{
-		href: '/',
-		label: '',
+		href: ROUTES.COURSES,
+		label: 'Courses'
 	},
 	{
-		href: '/',
-		label: '',
+		href: ROUTES.ABOUT_US,
+		label: 'About Us'
 	},
+	{
+		href: ROUTES.PRICING,
+		label: 'Pricing'
+	},
+	{
+		href: ROUTES.CONTACT,
+		label: 'Contact'
+	}
 ]

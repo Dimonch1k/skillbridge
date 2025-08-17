@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: SITE_NAME,
 		description: SEO_DESCRIPTION,
-		images: '/logo.png'
+		images: '/logo.svg'
 	},
 	metadataBase: new URL(
 		process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
@@ -46,7 +46,7 @@ export default function RootLayout({
 			<head>
 				<link
 					rel='icon'
-					href='/logo.png'
+					href='/logo.svg'
 					sizes='any'
 				/>
 			</head>
@@ -54,7 +54,7 @@ export default function RootLayout({
 				className={cn(inter.variable, beVietnamPro.variable, 'antialiased')}
 			>
 				<Header />
-				<main className='flex-1'>{children}</main>
+				<main className='flex-1 bg-white-97'>{children}</main>
 				<Footer />
 
 				{/* Toast notifications */}

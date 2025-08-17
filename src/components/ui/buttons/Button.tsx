@@ -26,28 +26,27 @@ export const Button: React.FC<ButtonProps> = ({
 	className = '',
 	disabled = false,
 	title,
-	ref,
+	ref
 }) => {
 	// Size Classes
 	const sizeClasses = {
 		sm: 'px-4 py-3 text-sm',
 		md: 'px-5 py-3.5 text-sm',
-		none: '',
+		none: ''
 	}
 
 	// Variant Classes
 	const variantClasses = {
-		primary:
-			'bg-background text-primary border-2 border-background shadow-[0_4px_14px_rgba(0,0,0,0.1)]',
+		primary: 'bg-orange-50 text-white px-5 px-6 lg:px-8.5 py-3 lg:py-3.5',
 		outline:
-			'bg-transparent text-background border-2 border-background hover:bg-background/10',
-		none: '',
+			'bg-transparent text-black px-8.5 py-3.5 border-2 border-orange-50',
+		none: ''
 	}
 
 	return (
 		<button
 			className={cn(
-				'inline-flex items-center justify-center font-medium gap-2 rounded-full hover:transform hover:-translate-y-0.5 transition-all duration-200 ease-linear cursor-pointer',
+				'inline-flex items-center justify-center font-normal gap-2 rounded-md transition-colors duration-300 ease-linear cursor-pointer text-sm xl:text-lg leading-[150%]',
 				sizeClasses[size],
 				variantClasses[variant],
 				className,

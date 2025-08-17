@@ -7,14 +7,30 @@ import Link from 'next/link'
 
 export interface NavListItemProps {
 	item: INavItem
+	isActive: boolean
 	closeMenu?: () => void
 	className?: string
 }
 
-export function NavListItem({ item, closeMenu, className }: NavListItemProps) {
+export function NavListItem({
+	item,
+	isActive,
+	closeMenu,
+	className
+}: NavListItemProps) {
 	return (
 		<li>
-			<Link href={item.href} onClick={closeMenu} className={cn('', className)}>
+			<Link
+				href={item.href}
+				onClick={closeMenu}
+				className={cn(
+					'text-grey-15 leading-[150%] text-sm xl:text-lg',
+					className,
+					isActive
+						? 'text-orange-50 md:text-grey-15 md:bg-white-95 md:rounded-lg md:px-6 md:py-3.5'
+						: 'hover:text-orange-50 transition-colors duration-300 ease-in-out'
+				)}
+			>
 				{item.label}
 			</Link>
 		</li>
