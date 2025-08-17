@@ -1,6 +1,7 @@
 'use client'
 
-import { Menu, X } from 'lucide-react'
+import { Button } from '@/components/ui/buttons/Button'
+import { AlignRight, X } from 'lucide-react'
 
 export interface MobileMenuButtonProps {
 	isMenuOpen: boolean
@@ -9,14 +10,14 @@ export interface MobileMenuButtonProps {
 
 export function MobileMenuButton({
 	isMenuOpen,
-	toggleMenu,
+	toggleMenu
 }: MobileMenuButtonProps) {
 	return (
-		<button
+		<Button
 			onClick={toggleMenu}
-			className='lg-xl:hidden bg-background hover:bg-surface rounded-full p-2 transition-colors duration-300 ease-linear text-text hover:text-primary cursor-pointer'
+			className='md:hidden bg-background'
 		>
-			{isMenuOpen ? <X className='h-6 w-6' /> : <Menu className='h-6 w-6' />}
-		</button>
+			{isMenuOpen ? <X size={24} /> : <AlignRight size={24} />}
+		</Button>
 	)
 }

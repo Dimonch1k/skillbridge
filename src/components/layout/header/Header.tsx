@@ -6,6 +6,9 @@ import { useClickOutside } from '@/hooks/useClickOutside'
 import { RefObject, useRef, useState } from 'react'
 
 import { cn } from '@/utils/cn'
+
+import { AuthButtons } from './AuthButtons'
+import { HeaderBanner } from './HeaderBanner'
 import { Logo } from './Logo'
 import { MobileMenuButton } from './MobileMenuButton'
 import { NavList } from './nav/NavList'
@@ -23,27 +26,43 @@ export function Header() {
 	const toggleMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen)
 
 	return (
-		<header className='w-full'>
-			<div className='flex justify-between items-center px-4 sm:px-6 lg-xl:px-8 py-4'>
-				<Logo closeMenu={closeMenu} />
-				<NavList list={navItemsData} closeMenu={closeMenu} />
-				<MobileMenuButton
-					isMenuOpen={isMobileMenuOpen}
-					toggleMenu={toggleMenu}
-				/>
+		<header className='w-full pt-10 px-4 sm:pt-5 lg:px-5 2xl:px-7.5'>
+			<HeaderBanner />
+
+			{/* Desktop Navigation */}
+			<div className='flex justify-between items-center py-3.5 lg:px-12.5 lg:pt-4 lg:pb-5 2xl:px-33 2xl:py-6'>
+				<div className='flex items-center gap-5 lg:gap-12.5'>
+					<Logo closeMenu={closeMenu} />
+					<NavList
+						list={navItemsData}
+						closeMenu={closeMenu}
+						className='hidden md:flex'
+					/>
+				</div>
+				<div className='flex items-center gap-5'>
+					<AuthButtons />
+					<MobileMenuButton
+						isMenuOpen={isMobileMenuOpen}
+						toggleMenu={toggleMenu}
+					/>
+				</div>
 			</div>
 
 			{/* Mobile Navigation */}
 			{isMobileMenuOpen && (
-				<div className='relative lg-xl:hidden'>
+				<div className='relative md:hidden'>
 					<div
 						ref={mobileMenuRef}
 						className={cn(
-							'lg-xl:hidden absolute top-0 left-0 z-50 w-full',
-							'bg-background flex flex-col shadow-[0_2px_8px_rgba(0,0,0,0.08)] border-t border-gray-300'
+							'md:hidden absolute top-0 left-0 z-50 w-full',
+							'bg-white flex flex-col shadow-[0_2px_8px_rgba(0,0,0,0.08)] border-t border-grey-70 py-2'
 						)}
 					>
-						<NavList list={navItemsData} closeMenu={closeMenu} />
+						<NavList
+							list={navItemsData}
+							closeMenu={closeMenu}
+							className='flex-col xs:flex-row'
+						/>
 					</div>
 				</div>
 			)}
