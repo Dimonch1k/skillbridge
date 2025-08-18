@@ -2,8 +2,8 @@
 
 import { ROUTES } from '@/constants/routes.constants'
 import { cn } from '@/utils/cn'
-import Image from 'next/image'
 
+import Image from 'next/image'
 import Link from 'next/link'
 
 export interface LogoProps {
