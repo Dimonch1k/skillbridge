@@ -2,10 +2,9 @@
 
 import { navItemsData } from '@/data/nav-items.data'
 import { useClickOutside } from '@/hooks/useClickOutside'
+import { cn } from '@/utils/cn'
 
 import { RefObject, useRef, useState } from 'react'
-
-import { cn } from '@/utils/cn'
 
 import { AuthButtons } from './AuthButtons'
 import { HeaderBanner } from './HeaderBanner'
@@ -17,9 +16,14 @@ export function Header() {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
 	const mobileMenuRef = useRef<HTMLDivElement>(null)
+	const mobileMenuButtonRef = useRef<HTMLButtonElement>(null)
 
-	useClickOutside([mobileMenuRef as RefObject<HTMLElement>], () =>
-		setIsMobileMenuOpen(false)
+	useClickOutside(
+		[
+			mobileMenuRef as RefObject<HTMLElement>,
+			mobileMenuButtonRef as RefObject<HTMLElement>
+		],
+		() => setIsMobileMenuOpen(false)
 	)
 
 	const closeMenu = () => setIsMobileMenuOpen(false)
@@ -42,6 +46,7 @@ export function Header() {
 				<div className='flex items-center gap-5'>
 					<AuthButtons />
 					<MobileMenuButton
+						ref={mobileMenuButtonRef}
 						isMenuOpen={isMobileMenuOpen}
 						toggleMenu={toggleMenu}
 					/>

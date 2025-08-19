@@ -8,11 +8,11 @@ import Link from 'next/link'
 
 export default function NotFound() {
 	return (
-		<div className='flex min-h-screen flex-col items-center justify-center bg-grey-15 text-white px-4'>
+		<div className='flex min-h-screen flex-col items-center justify-center text-white px-4'>
 			<h1 className='text-[8rem] font-extrabold text-orange-50 drop-shadow-lg'>
 				404
 			</h1>
-			<h2 className='mt-4 text-3xl font-semibold text-white-95'>
+			<h2 className='mt-4 text-3xl font-semibold text-grey-15'>
 				Page Not Found
 			</h2>
 			<p className='mt-2 max-w-md text-center text-grey-60'>
