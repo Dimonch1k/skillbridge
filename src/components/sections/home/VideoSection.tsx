@@ -1,14 +1,12 @@
 'use client'
 
 import { Section } from '@/components/ui/Section'
+
 import Image from 'next/image'
 
 export function VideoSection() {
 	return (
-		<Section
-			id='video'
-			className=''
-		>
+		<Section id='video'>
 			<Image
 				src='/video.jpg'
 				alt='Video'

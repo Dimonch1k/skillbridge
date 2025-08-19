@@ -27,23 +27,29 @@ export function Section({
 	return (
 		<section
 			id={id}
-			className={cn('w-full flex flex-col', className, title && '')}
+			className={cn(
+				'w-full flex flex-col',
+				className,
+				title && 'gap-10 lg:gap-15 2xl:gap-20'
+			)}
 		>
 			{title && (
-				<div className='space-y-5'>
-					<div className='space-y-1'>
+				<div className='w-full flex flex-col lg:flex-row items-start lg:items-end gap-5 lg:gap-[250px] 2xl:gap-[300px]'>
+					<div className='space-y-1 2xl:space-y-1.5'>
 						<h2
 							className={cn(
-								'text-grey-15 text-[28px] font-semibold leading-[150%]',
+								'text-grey-15 font-semibold leading-[150%]',
 								titleClassName
 							)}
 						>
 							{title}
 						</h2>
-						<p className='text-grey-35 text-sm font-normal leading-[150%]'>
+
+						<p className='text-grey-35 text-sm lg:text-base 2xl:text-lg font-normal leading-[150%]'>
 							{description}
 						</p>
 					</div>
+
 					{headerChildren}
 				</div>
 			)}

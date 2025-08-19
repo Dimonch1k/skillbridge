@@ -3,7 +3,7 @@
 import { Section } from '@/components/ui/Section'
 
 import { HeroBanner } from './HeroBanner'
-import { HeroButtons } from './HeroButtons'
+import { HeroLinks } from './HeroLinks'
 import { HeroText } from './HeroText'
 
 export function HeroSection() {
@@ -17,7 +17,7 @@ export function HeroSection() {
 				<HeroText />
 			</div>
 
-			<HeroButtons />
+			<HeroLinks />
 		</Section>
 	)
 }

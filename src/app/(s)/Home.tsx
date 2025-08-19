@@ -5,6 +5,7 @@ import {
 	HeroSection,
 	VideoSection
 } from '@/components/sections/home'
+import { BenefitsSection } from '@/components/sections/home/benefits/BenefitsSection'
 
 export function Home() {
 	return (
@@ -14,6 +15,8 @@ export function Home() {
 				<BrandsSection />
 				<VideoSection />
 			</div>
+
+			<BenefitsSection />
 		</div>
 	)
 }

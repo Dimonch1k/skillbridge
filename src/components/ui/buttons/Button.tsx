@@ -38,7 +38,7 @@ export const Button: React.FC<ButtonProps> = ({
 	// Variant Classes
 	const variantClasses = {
 		primary: 'bg-orange-50 text-white border border-orange-50',
-		outline: 'bg-transparent text-black border-2 border-orange-50',
+		outline: 'bg-transparent text-grey-15 border-2 border-orange-50',
 		none: ''
 	}
 

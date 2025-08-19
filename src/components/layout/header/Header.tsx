@@ -6,7 +6,7 @@ import { cn } from '@/utils/cn'
 
 import { RefObject, useRef, useState } from 'react'
 
-import { AuthButtons } from './AuthButtons'
+import { AuthLinks } from './AuthLinks'
 import { HeaderBanner } from './HeaderBanner'
 import { Logo } from './Logo'
 import { MobileMenuButton } from './MobileMenuButton'
@@ -44,7 +44,7 @@ export function Header() {
 					/>
 				</div>
 				<div className='flex items-center gap-5'>
-					<AuthButtons />
+					<AuthLinks />
 					<MobileMenuButton
 						ref={mobileMenuButtonRef}
 						isMenuOpen={isMobileMenuOpen}
@@ -60,7 +60,7 @@ export function Header() {
 						ref={mobileMenuRef}
 						className={cn(
 							'md:hidden absolute top-0 left-0 z-50 w-full',
-							'bg-white flex flex-col shadow-[0_2px_8px_rgba(0,0,0,0.08)] border-t border-grey-70 py-2'
+							'bg-white flex flex-col shadow-md border-t border-grey-70 py-2'
 						)}
 					>
 						<NavList

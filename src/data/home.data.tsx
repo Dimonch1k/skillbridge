@@ -7,10 +7,12 @@ import {
 	ZapierIcon,
 	ZoomIcon
 } from '@/components/ui/icons/home/brands'
+import { ROUTES } from '@/constants/routes.constants'
 
-import type { IBrand, IHomeSection } from '@/types/home.interface'
+import type { IBenefit, IBrand, IHomeSection } from '@/types/home.interface'
 
 const brandIconColor = '#4c4c4d'
+const brandIconClassName = 'xl:w-full h-6 lg:h-7 2xl:h-8.5'
 
 export const homeSectionsData: IHomeSection[] = [
 	{
@@ -37,7 +39,7 @@ export const brandListData: IBrand[] = [
 		icon: (
 			<ZapierIcon
 				color={brandIconColor}
-				className='h-6 lg:h-7 2xl:h-8.5'
+				className={brandIconClassName}
 			/>
 		)
 	},
@@ -46,7 +48,7 @@ export const brandListData: IBrand[] = [
 		icon: (
 			<SpotifyIcon
 				color={brandIconColor}
-				className='h-6 lg:h-7 2xl:h-8.5'
+				className={brandIconClassName}
 			/>
 		)
 	},
@@ -55,7 +57,7 @@ export const brandListData: IBrand[] = [
 		icon: (
 			<ZoomIcon
 				color={brandIconColor}
-				className='h-6 lg:h-7 2xl:h-8.5'
+				className={brandIconClassName}
 			/>
 		)
 	},
@@ -64,7 +66,7 @@ export const brandListData: IBrand[] = [
 		icon: (
 			<AmazonIcon
 				color={brandIconColor}
-				className='h-6 lg:h-7 2xl:h-8.5'
+				className={brandIconClassName}
 			/>
 		)
 	},
@@ -73,7 +75,7 @@ export const brandListData: IBrand[] = [
 		icon: (
 			<AdobeIcon
 				color={brandIconColor}
-				className='h-6 lg:h-7 2xl:h-8.5'
+				className={brandIconClassName}
 			/>
 		)
 	},
@@ -82,7 +84,7 @@ export const brandListData: IBrand[] = [
 		icon: (
 			<NotionIcon
 				color={brandIconColor}
-				className='h-6 lg:h-7 2xl:h-8.5'
+				className={brandIconClassName}
 			/>
 		)
 	},
@@ -91,8 +93,47 @@ export const brandListData: IBrand[] = [
 		icon: (
 			<NetflixIcon
 				color={brandIconColor}
-				className='h-6 lg:h-7 2xl:h-8.5'
+				className={brandIconClassName}
 			/>
 		)
+	}
+]
+
+export const benefitsListData: IBenefit[] = [
+	{
+		title: 'Flexible Learning Schedule',
+		description:
+			'Fit your coursework around your existing commitments and obligations.',
+		href: ROUTES.HOME
+	},
+	{
+		title: 'Expert Instruction',
+		description:
+			'Learn from industry experts who have hands-on experience in design and development.',
+		href: ROUTES.HOME
+	},
+	{
+		title: 'Diverse Course Offerings',
+		description:
+			'Explore a wide range of design and development courses covering various topics.',
+		href: ROUTES.HOME
+	},
+	{
+		title: 'Updated Curriculum',
+		description:
+			'Access courses with up-to-date content reflecting the latest trends and industry practices.',
+		href: ROUTES.HOME
+	},
+	{
+		title: 'Practical Projects and Assignments',
+		description:
+			'Develop a portfolio showcasing your skills and abilities to potential employers.',
+		href: ROUTES.HOME
+	},
+	{
+		title: 'Interactive Learning Environment',
+		description:
+			'Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding.',
+		href: ROUTES.HOME
 	}
 ]
