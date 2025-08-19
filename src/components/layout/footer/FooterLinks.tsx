@@ -8,21 +8,18 @@ export function FooterLinks() {
 	return (
 		<div className='w-full flex flex-col lg:flex-row lg:justify-between gap-6'>
 			<div className='w-full flex gap-7.5 lg:gap-6'>
-				{footerLinksData.map((item, index) => (
+				{footerLinksData.map((item, i1) => (
 					<div
-						key={index}
+						key={i1}
 						className='flex-1 flex flex-col gap-2.5'
 					>
 						<h3 className='text-lg text-grey-15 font-semibold'>{item.title}</h3>
 						<ul className='flex flex-col gap-1 text-sm lg:text-base text-grey-35'>
-							{item.list.map((item, index) => (
-								<li
-									key={index}
-									className='hover:text-orange-50 transition-colors duration-100 ease-linear'
-								>
+							{item.list.map((item, i2) => (
+								<li key={i2}>
 									<Link
 										href={item.href}
-										className='text-nowrap'
+										className='text-nowrap hover:text-orange-50 transition-colors duration-100 ease-linear'
 									>
 										{item.label}
 									</Link>
@@ -44,7 +41,7 @@ export function FooterLinks() {
 						>
 							<Link
 								href={item.href}
-								className='bg-white-97 border border-white-95 rounded-md p-3'
+								className='bg-white-97 hover:bg-orange-97 border border-white-95 hover:border-orange-90 rounded-md p-3 transition-colors duration-200 ease-linear'
 							>
 								<div className='size-6 grid place-content-center'>
 									{item.icon}

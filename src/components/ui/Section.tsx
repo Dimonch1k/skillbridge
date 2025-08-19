@@ -8,6 +8,7 @@ export interface SectionProps {
 	titleClassName?: string
 	className?: string
 	children?: React.ReactNode
+	childrenClassName?: string
 }
 
 export function Section({
@@ -16,11 +17,15 @@ export function Section({
 	titleClassName,
 	className,
 	children,
+	childrenClassName
 }: SectionProps) {
 	return (
-		<section id={id} className={cn('', className, title && '')}>
+		<section
+			id={id}
+			className={cn('w-full flex flex-col', className, title && '')}
+		>
 			{title && <h2 className={cn('', titleClassName)}>{title}</h2>}
-			<div className=''>{children}</div>
+			{title ? <div className={childrenClassName}>{children}</div> : children}
 		</section>
 	)
 }

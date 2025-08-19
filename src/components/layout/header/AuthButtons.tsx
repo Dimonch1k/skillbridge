@@ -15,6 +15,7 @@ export function AuthButtons() {
 				<Button
 					type='button'
 					variant='primary'
+					className='px-5 py-3 lg:px-6 2xl:px-8.5 2xl:py-3.5'
 				>
 					Login
 				</Button>
