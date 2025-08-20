@@ -5,6 +5,7 @@ import {
 	BrandsSection,
 	CoursesSection,
 	HeroSection,
+	PricingSection,
 	TestimonialsSection,
 	VideoSection
 } from '@/components/sections/home'
@@ -21,6 +22,7 @@ export function Home() {
 			<BenefitsSection />
 			<CoursesSection />
 			<TestimonialsSection />
+			<PricingSection />
 		</div>
 	)
 }

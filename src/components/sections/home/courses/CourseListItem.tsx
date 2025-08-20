@@ -28,7 +28,7 @@ export function CourseListItem({ item, className }: CourseListItemProps) {
 				alt={item.title}
 				width={684}
 				height={380}
-				className='w-full h-full object-contain'
+				className='w-full object-contain'
 			/>
 
 			<CourseListItemContent item={item} />
@@ -36,7 +36,7 @@ export function CourseListItem({ item, className }: CourseListItemProps) {
 			<Link
 				href={ROUTES.COURSE(item.id)}
 				className={cn(
-					'w-full bg-white-97 border border-white-95 rounded-md 2xl:rounded-lg',
+					'mt-auto w-full bg-white-97 border border-white-95 rounded-md 2xl:rounded-lg',
 					'text-grey-15 text-sm 2xl:text-lg text-center',
 					'px-6 py-3.5 2xl:py-4.5'
 				)}
