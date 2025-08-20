@@ -1,6 +1,7 @@
 'use client'
 
 import { cn } from '@/utils/cn'
+
 import { Copyright } from './Copyright'
 import { FooterContainer } from './FooterContainer'
 

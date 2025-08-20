@@ -1,9 +1,9 @@
 import { COURSE_LEVEL, type ICourse } from '@/types/course.interface'
 
-export const coursesListData: ICourse[] = [
+export const courseListData: ICourse[] = [
 	{
 		id: 1,
-		imageSrc: '/courses/home/web-design-fundamentals.jpg',
+		imageSrc: '/home/courses/web-design-fundamentals.jpg',
 		time: '4 Weeks',
 		level: COURSE_LEVEL.beginner,
 		author: 'John Smith',
@@ -14,7 +14,7 @@ export const coursesListData: ICourse[] = [
 	},
 	{
 		id: 2,
-		imageSrc: '/courses/home/ui-ux-design.jpg',
+		imageSrc: '/home/courses/ui-ux-design.jpg',
 		time: '6 Weeks',
 		level: COURSE_LEVEL.intermediate,
 		author: 'Emily Johnson',
@@ -25,7 +25,7 @@ export const coursesListData: ICourse[] = [
 	},
 	{
 		id: 3,
-		imageSrc: '/courses/home/mobile-app-dev.jpg',
+		imageSrc: '/home/courses/mobile-app-dev.jpg',
 		time: '8 Weeks',
 		level: COURSE_LEVEL.intermediate,
 		author: 'David Brown',
@@ -36,7 +36,7 @@ export const coursesListData: ICourse[] = [
 	},
 	{
 		id: 4,
-		imageSrc: '/courses/home/graphic-design-for-beginners.jpg',
+		imageSrc: '/home/courses/graphic-design-for-beginners.jpg',
 		time: '10 Weeks',
 		level: COURSE_LEVEL.beginner,
 		author: 'Sarah Thompson',
@@ -47,7 +47,7 @@ export const coursesListData: ICourse[] = [
 	},
 	{
 		id: 5,
-		imageSrc: '/courses/home/front-end-web-dev.jpg',
+		imageSrc: '/home/courses/front-end-web-dev.jpg',
 		time: '10 Weeks',
 		level: COURSE_LEVEL.intermediate,
 		author: 'Michael Adams',
@@ -58,7 +58,7 @@ export const coursesListData: ICourse[] = [
 	},
 	{
 		id: 6,
-		imageSrc: '/courses/home/advanced-javascript.jpg',
+		imageSrc: '/home/courses/advanced-javascript.jpg',
 		time: '6 Weeks',
 		level: COURSE_LEVEL.advance,
 		author: 'Jennifer Wilson',

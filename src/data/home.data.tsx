@@ -99,7 +99,7 @@ export const brandListData: IBrand[] = [
 	}
 ]
 
-export const benefitsListData: IBenefit[] = [
+export const benefitListData: IBenefit[] = [
 	{
 		title: 'Flexible Learning Schedule',
 		description:

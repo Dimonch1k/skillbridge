@@ -3,9 +3,10 @@
 import { ROUTES } from '@/constants/routes.constants'
 import type { ICourse } from '@/types/course.interface'
 import { cn } from '@/utils/cn'
-import Image from 'next/image'
 
+import Image from 'next/image'
 import Link from 'next/link'
+
 import { CourseListItemContent } from './CourseListItemContent'
 
 export interface CourseListItemProps {
