@@ -10,7 +10,7 @@ export default function SkillBridgeLayout({
 		<>
 			<Header />
 			<main className='flex-1 bg-white-97 px-4 lg:px-20 2xl:px-[163px] py-12.5 lg:pt-20 2xl:pt-25 lg:pb-25 2xl:pb-37.5'>
-				{children}
+				<div className='max-w-[112rem] mx-auto'>{children}</div>
 			</main>
 			<Footer />
 		</>

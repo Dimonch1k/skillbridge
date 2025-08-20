@@ -1,7 +1,7 @@
 'use client'
 
-import { Button } from '@/components/ui/buttons/Button'
 import { ROUTES } from '@/constants/routes.constants'
+import { cn } from '@/utils/cn'
 
 import { Home } from 'lucide-react'
 import Link from 'next/link'
@@ -22,16 +22,16 @@ export default function NotFound() {
 
 			<Link
 				href={ROUTES.HOME}
-				className='mt-8'
+				className={cn(
+					'text-sm xl:text-lg leading-[150%] font-medium',
+					'mt-8 px-6 py-3',
+					'text-orange-50 hover:text-white bg-transparent hover:bg-orange-50 border-2 border-orange-50',
+					'rounded-xl shadow-lg inline-flex items-center justify-center gap-2',
+					'transition-colors duration-300 ease-linear'
+				)}
 			>
-				<Button
-					type='button'
-					variant='outline'
-					className='border-orange-50 text-orange-50 hover:bg-orange-50 hover:text-grey-15 transition-colors flex items-center gap-2 px-6 py-3 rounded-xl shadow-lg'
-				>
-					<Home size={18} />
-					Go Home
-				</Button>
+				<Home size={18} />
+				Go Home
 			</Link>
 		</div>
 	)

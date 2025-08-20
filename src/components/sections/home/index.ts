@@ -1,3 +1,5 @@
+export { BenefitsSection } from './benefits/BenefitsSection'
 export { BrandsSection } from './brands/BrandsSection'
+export { CoursesSection } from './courses/CoursesSection'
 export { HeroSection } from './hero/HeroSection'
 export { VideoSection } from './VideoSection'

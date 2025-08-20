@@ -2,9 +2,7 @@
 
 import { cn } from '@/utils/cn'
 
-import { useRouter } from 'next/navigation'
-
-import { Button } from './Button'
+import Link from 'next/link'
 
 export interface ViewButtonProps {
 	href: string
@@ -13,18 +11,17 @@ export interface ViewButtonProps {
 }
 
 export function ViewButton({ href, title, className }: ViewButtonProps) {
-	const router = useRouter()
-
 	return (
-		<Button
-			onClick={() => router.push(href)}
+		<Link
+			href={href}
 			className={cn(
+				'font-normal gap-2 rounded-md text-sm xl:text-lg leading-[150%]',
 				'text-nowrap text-grey-15 bg-white-99 border border-white-95',
 				'px-5 py-3.5 2xl:px-6 2xl:py-4.5',
 				className
 			)}
 		>
 			{title}
-		</Button>
+		</Link>
 	)
 }

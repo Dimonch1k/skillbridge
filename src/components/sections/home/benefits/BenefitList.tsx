@@ -2,6 +2,7 @@
 
 import type { IBenefit } from '@/types/home.interface'
 import { cn } from '@/utils/cn'
+
 import { BenefitListItem } from './BenefitListItem'
 
 export interface BenefitListProps {

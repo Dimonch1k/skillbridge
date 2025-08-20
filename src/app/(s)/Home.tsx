@@ -1,11 +1,12 @@
 'use client'
 
 import {
+	BenefitsSection,
 	BrandsSection,
+	CoursesSection,
 	HeroSection,
 	VideoSection
 } from '@/components/sections/home'
-import { BenefitsSection } from '@/components/sections/home/benefits/BenefitsSection'
 
 export function Home() {
 	return (
@@ -17,6 +18,7 @@ export function Home() {
 			</div>
 
 			<BenefitsSection />
+			<CoursesSection />
 		</div>
 	)
 }

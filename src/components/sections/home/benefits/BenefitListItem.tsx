@@ -2,6 +2,7 @@
 
 import type { IBenefit } from '@/types/home.interface'
 import { cn } from '@/utils/cn'
+
 import { ArrowUpRight } from 'lucide-react'
 import Link from 'next/link'
 
@@ -39,7 +40,7 @@ export function BenefitListItem({
 			<Link
 				href={item.href}
 				className={cn(
-					'bg-white-99 border border-white-95 rounded-md 2xl:rounded-lg',
+					'lg:mt-auto bg-white-99 border border-white-95 rounded-md 2xl:rounded-lg',
 					'p-3.5 2xl:p-5'
 				)}
 			>
