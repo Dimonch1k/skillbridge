@@ -4,6 +4,7 @@ import {
 	BenefitsSection,
 	BrandsSection,
 	CoursesSection,
+	FaqSection,
 	HeroSection,
 	PricingSection,
 	TestimonialsSection,
@@ -23,6 +24,7 @@ export function Home() {
 			<CoursesSection />
 			<TestimonialsSection />
 			<PricingSection />
+			<FaqSection />
 		</div>
 	)
 }

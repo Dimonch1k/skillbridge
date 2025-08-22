@@ -28,7 +28,7 @@ export function CourseListItem({ item, className }: CourseListItemProps) {
 				alt={item.title}
 				width={684}
 				height={380}
-				className='w-full object-contain'
+				className='w-full object-contain rounded-lg'
 			/>
 
 			<CourseListItemContent item={item} />

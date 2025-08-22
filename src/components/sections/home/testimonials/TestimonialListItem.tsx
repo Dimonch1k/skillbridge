@@ -47,7 +47,7 @@ export function TestimonialListItem({
 						alt={item.profile.fullName}
 						width={61}
 						height={61}
-						className='size-12.5 2xl:size-15 object-contain'
+						className='size-12.5 2xl:size-15 object-contain rounded-md'
 					/>
 
 					<p className='text-nowrap text-grey-20 text-base 2xl:text-lg font-semibold leading-[150%]'>

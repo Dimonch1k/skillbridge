@@ -17,11 +17,11 @@ export function PricingListItemFeatures({
 	className
 }: PricingListItemFeaturesProps) {
 	return (
-		<div className={cn('w-full grid', className)}>
+		<div className={cn('h-full w-full flex flex-col', className)}>
 			{/* Features */}
 			<div
 				className={cn(
-					'flex flex-col gap-5 lg:gap-6 2xl:gap-7.5 p-5 lg:p-7.5 2xl:p-10',
+					'h-full flex flex-col gap-5 lg:gap-6 2xl:gap-7.5 p-5 lg:p-7.5 2xl:p-10',
 					'bg-white border border-white-95 rounded-t-[10px] lg:rounded-t-[14px]'
 				)}
 			>

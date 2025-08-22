@@ -5,23 +5,26 @@ import { cn } from '@/utils/cn'
 export interface SectionProps {
 	id: string
 	title?: string
-	titleClassName?: string
 	description?: string
 	headerChildren?: React.ReactNode
+	children?: React.ReactNode
 
 	className?: string
-	children?: React.ReactNode
+	headerClassName?: string
+	titleClassName?: string
 	childrenClassName?: string
 }
 
 export function Section({
 	id,
 	title,
-	titleClassName,
 	description,
 	headerChildren,
-	className,
 	children,
+
+	className,
+	headerClassName,
+	titleClassName,
 	childrenClassName
 }: SectionProps) {
 	return (
@@ -29,12 +32,17 @@ export function Section({
 			id={id}
 			className={cn(
 				'w-full flex flex-col',
-				className,
-				title && 'gap-10 lg:gap-15 2xl:gap-20'
+				title && 'gap-10 lg:gap-15 2xl:gap-20',
+				className
 			)}
 		>
 			{title && (
-				<div className='w-full flex flex-col lg:flex-row items-start lg:items-end gap-5 lg:gap-[250px] 2xl:gap-[300px]'>
+				<div
+					className={cn(
+						'w-full flex flex-col lg:flex-row items-start lg:items-end lg:justify-between gap-5 lg:gap-[250px] 2xl:gap-[300px]',
+						headerClassName
+					)}
+				>
 					<div className='space-y-1 2xl:space-y-1.5'>
 						{/* Title */}
 						<h2
