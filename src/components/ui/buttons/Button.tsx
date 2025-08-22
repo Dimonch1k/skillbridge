@@ -30,16 +30,15 @@ export const Button: React.FC<ButtonProps> = ({
 }) => {
 	// Size Classes
 	const sizeClasses = {
-		sm: 'px-4 py-3 text-sm',
-		md: 'px-5 py-3.5 text-sm',
+		sm: '',
+		md: '',
 		none: ''
 	}
 
 	// Variant Classes
 	const variantClasses = {
-		primary: 'bg-orange-50 text-white px-5 px-6 lg:px-8.5 py-3 lg:py-3.5',
-		outline:
-			'bg-transparent text-black px-8.5 py-3.5 border-2 border-orange-50',
+		primary: 'bg-orange-50 text-white border border-orange-50',
+		outline: 'bg-transparent text-grey-15 border-2 border-orange-50',
 		none: ''
 	}
 

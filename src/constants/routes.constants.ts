@@ -2,7 +2,7 @@ export const ROUTES = {
 	// Shared
 	HOME: '/' as const,
 	COURSES: '/courses' as const,
-	COURSE: (slug: string) => `/courses/${slug}` as const,
+	COURSE: (id: number) => `/courses/${id}` as const,
 	ABOUT_US: '/about-us' as const,
 	PRICING: '/pricing' as const,
 	CONTACT: '/contact' as const,

@@ -1,0 +1,8 @@
+export { BenefitsSection } from './benefits/BenefitsSection'
+export { BrandsSection } from './brands/BrandsSection'
+export { CoursesSection } from './courses/CoursesSection'
+export { FaqSection } from './faq/FaqSection'
+export { HeroSection } from './hero/HeroSection'
+export { PricingSection } from './pricing/PricingSection'
+export { TestimonialsSection } from './testimonials/TestimonialsSection'
+export { VideoSection } from './VideoSection'

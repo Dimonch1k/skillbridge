@@ -8,7 +8,7 @@ export function FooterInfo() {
 		<div className='w-full flex flex-col gap-7.5'>
 			<Logo />
 
-			<div className='flex flex-col gap-3 font-medium text-base'>
+			<div className='flex flex-col gap-3 font-normal text-grey-15 text-[15px] lg:text-base 2xl:text-lg'>
 				{footerInfoData.map((item, index) => (
 					<div
 						key={index}

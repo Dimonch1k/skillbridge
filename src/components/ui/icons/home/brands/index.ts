@@ -1,0 +1,7 @@
+export { AdobeIcon } from './AdobeIcon'
+export { AmazonIcon } from './AmazonIcon'
+export { NetflixIcon } from './NetflixIcon'
+export { NotionIcon } from './NotionIcon'
+export { SpotifyIcon } from './SpotifyIcon'
+export { ZapierIcon } from './ZapierIcon'
+export { ZoomIcon } from './ZoomIcon'

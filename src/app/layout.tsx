@@ -3,9 +3,6 @@ import './globals.css'
 import { SEO_DESCRIPTION, SITE_NAME } from '@/constants/seo.constants'
 import { cn } from '@/utils/cn'
 
-import { Footer } from '@/components/layout/footer/Footer'
-import { Header } from '@/components/layout/header/Header'
-
 import type { Metadata } from 'next'
 import { Be_Vietnam_Pro, Inter } from 'next/font/google'
 import { Toaster } from 'react-hot-toast'
@@ -53,9 +50,7 @@ export default function RootLayout({
 			<body
 				className={cn(inter.variable, beVietnamPro.variable, 'antialiased')}
 			>
-				<Header />
-				<main className='flex-1 bg-white-97'>{children}</main>
-				<Footer />
+				{children}
 
 				{/* Toast notifications */}
 				<Toaster
