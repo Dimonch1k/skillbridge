@@ -12,7 +12,9 @@ export interface CourseListProps {
 
 export function CourseList({ list, className }: CourseListProps) {
 	return (
-		<ul className={cn('w-full grid lg:grid-cols-2 gap-5', className)}>
+		<ul
+			className={cn('flex flex-col', 'gap-5 lg:gap-10 2xl:gap-12.5', className)}
+		>
 			{list.map((course, index) => (
 				<CourseListItem
 					key={index}
