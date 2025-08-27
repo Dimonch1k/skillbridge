@@ -1,6 +1,6 @@
 'use client'
 
-import { CourseList } from '@/components/sections/courses/CourseList'
+import { CourseList } from '@/components/sections/courses/list/CourseList'
 import { PageHeader } from '@/components/shared/PageHeader'
 
 import { courseListData } from '@/data/courses.data'

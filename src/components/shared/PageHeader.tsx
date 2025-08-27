@@ -12,10 +12,9 @@ export function PageHeader({ title, description, className }: PageHeaderProps) {
 	return (
 		<div
 			className={cn(
-				'w-full flex flex-col lg:flex-row border-b border-white-90',
+				'w-full flex flex-col lg:flex-row lg:items-center border-b border-white-90',
 				'gap-4 lg:gap-20 2xl:gap-25',
 				'pb-7.5 lg:pb-10 2xl:pb-12.5',
-				'lg:px-15 2xl:px-[132px]',
 				className
 			)}
 		>

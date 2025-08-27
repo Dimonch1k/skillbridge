@@ -3,6 +3,8 @@
 import type { ICourse } from '@/types/course.interface'
 import { cn } from '@/utils/cn'
 
+import React from 'react'
+
 export interface CourseListItemCurriculumProps {
 	curriculum: ICourse['curriculum']
 	className?: string
@@ -34,29 +36,28 @@ export function CourseListItemCurriculum({
 					'p-6 lg:px-10 2xl:px-12.5 2xl:py-7.5'
 				)}
 			>
-				{curriculum.map((cur, index) => (
-					<>
+				{curriculum.map(item => (
+					<React.Fragment key={`item-${item.id}`}>
 						<li
 							className={cn('w-full flex flex-col', 'gap-3 lg:gap-4 2xl:gap-5')}
 						>
 							<h3 className='text-[30px] lg:text-[40px] 2xl:text-[50px] font-bold'>
-								{String(index + 1).padStart(2, '0')}
+								{String(item.id).padStart(2, '0')}
 							</h3>
-
 							<p
 								className={cn(
-									'text-grey-35 font-normal leading-[150%]',
+									'text-grey-35 font-medium leading-[150%]',
 									'text-sm lg:text-base 2xl:text-lg'
 								)}
 							>
-								{cur}
+								{item.title}
 							</p>
 						</li>
 
-						{index !== curriculum.length - 1 && (
+						{item.id !== curriculum.length - 1 && (
 							<div className='w-full h-[1px] lg:w-[1px] lg:h-auto self-stretch bg-white-95' />
 						)}
-					</>
+					</React.Fragment>
 				))}
 			</ul>
 		</div>
