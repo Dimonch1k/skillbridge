@@ -1,5 +1,7 @@
 'use client'
 
+import { CourseListItemInfo } from '@/components/shared/courses/CourseListItemInfo'
+
 import { ROUTES } from '@/constants/routes.constants'
 import type { ICourse } from '@/types/course.interface'
 import { cn } from '@/utils/cn'
@@ -7,14 +9,12 @@ import { cn } from '@/utils/cn'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { CourseListItemContent } from './CourseListItemContent'
-
 export interface CourseListItemProps {
-	item: ICourse
+	course: ICourse
 	className?: string
 }
 
-export function CourseListItem({ item, className }: CourseListItemProps) {
+export function CourseListItem({ course, className }: CourseListItemProps) {
 	return (
 		<li
 			className={cn(
@@ -24,17 +24,27 @@ export function CourseListItem({ item, className }: CourseListItemProps) {
 			)}
 		>
 			<Image
-				src={item.imageSrc}
-				alt={item.title}
+				src={course.imageSrc}
+				alt={course.title}
 				width={684}
 				height={380}
 				className='w-full object-contain rounded-lg'
 			/>
 
-			<CourseListItemContent item={item} />
+			<CourseListItemInfo course={course} />
+
+			<div className='space-y-2.5 2xl:space-y-3.5'>
+				<h5 className='text-grey-15 text-[20px] 2xl:text-2xl font-semibold leading-[150%]'>
+					{course.title}
+				</h5>
+
+				<p className='text-grey-30 text-sm lg:text-base 2xl:text-lg font-normal leading-[150%]'>
+					{course.description}
+				</p>
+			</div>
 
 			<Link
-				href={ROUTES.COURSE(item.id)}
+				href={ROUTES.COURSE(course.id)}
 				className={cn(
 					'mt-auto w-full bg-white-97 border border-white-95 rounded-md 2xl:rounded-lg',
 					'text-grey-15 text-sm 2xl:text-lg text-center',

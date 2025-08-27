@@ -1,7 +1,7 @@
 export const COURSE_LEVEL = {
-	beginner: 'Beginner',
-	intermediate: 'Intermediate',
-	advance: 'Advance'
+	beginner: 'Beginner' as const,
+	intermediate: 'Intermediate' as const,
+	advance: 'Advance' as const
 } as const
 
 export interface ICourse {
@@ -13,4 +13,15 @@ export interface ICourse {
 
 	title: string
 	description: string
+
+	curriculum: {
+		id: number
+		title: string
+		lessons: {
+			id: number
+			title: string
+			time: string
+			isHighlighted: boolean
+		}[]
+	}[]
 }
