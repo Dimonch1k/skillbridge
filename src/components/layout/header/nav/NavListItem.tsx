@@ -24,7 +24,7 @@ export function NavListItem({
 				href={item.href}
 				onClick={closeMenu}
 				className={cn(
-					'text-grey-15 leading-[150%] text-sm xl:text-lg',
+					'text-grey-15 leading-[150%] text-sm 2xl:text-lg',
 					className,
 					isActive
 						? 'text-orange-50 md:text-grey-15 md:bg-white-95 md:rounded-lg md:px-6 md:py-3.5'

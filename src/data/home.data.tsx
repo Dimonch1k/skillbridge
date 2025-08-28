@@ -12,7 +12,7 @@ import { ROUTES } from '@/constants/routes.constants'
 import type { IBenefit, IBrand, IHomeSection } from '@/types/home.interface'
 
 const brandIconColor = '#4c4c4d'
-const brandIconClassName = 'xl:w-full h-6 lg:h-7 2xl:h-8.5'
+const brandIconClassName = 'lg:w-full h-6 lg:h-7 2xl:h-8.5'
 
 export const homeSectionsData: IHomeSection[] = [
 	{

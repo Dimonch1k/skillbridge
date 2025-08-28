@@ -13,7 +13,7 @@ export function FooterLinks() {
 						key={i1}
 						className='flex-1 flex flex-col gap-2.5'
 					>
-						<h3 className='text-lg 2xl:text-[20px] text-grey-15 font-semibold'>
+						<h3 className='text-lg 2xl:text-xl text-grey-15 font-semibold'>
 							{item.title}
 						</h3>
 						<ul className='flex flex-col gap-1 text-sm lg:text-base 2xl:text-lg text-grey-35'>
@@ -33,7 +33,7 @@ export function FooterLinks() {
 			</div>
 
 			<div className='flex-1 flex flex-col gap-2.5'>
-				<h3 className='text-lg 2xl:text-[20px] text-grey-15 font-semibold'>
+				<h3 className='text-lg 2xl:text-xl text-grey-15 font-semibold'>
 					Social Profiles
 				</h3>
 				<ul className='flex gap-3.5'>

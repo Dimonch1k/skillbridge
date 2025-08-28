@@ -29,7 +29,7 @@ export function BenefitListItem({
 				{String(index).padStart(2, '0')}
 			</h3>
 			<div className='w-full flex flex-col items-start gap-2.5'>
-				<h5 className='text-grey-20 text-[20px] 2xl:text-2xl font-semibold leading-[150%]'>
+				<h5 className='text-grey-20 text-xl 2xl:text-2xl font-semibold leading-[150%]'>
 					{item.title}
 				</h5>
 				<p className='text-grey-30 text-sm lg:text-base 2xl:text-lg font-normal leading-[150%]'>

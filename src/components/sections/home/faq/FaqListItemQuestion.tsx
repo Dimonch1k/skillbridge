@@ -33,7 +33,7 @@ export function FaqListItemQuestion({
 			<p
 				className={cn(
 					'w-full font-medium leading-[150%]',
-					'text-grey-15 text-base lg:text-lg 2xl:text-[20px]'
+					'text-grey-15 text-base lg:text-lg 2xl:text-xl'
 				)}
 			>
 				{question}

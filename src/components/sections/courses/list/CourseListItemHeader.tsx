@@ -28,7 +28,7 @@ export function CourseListItemHeader({
 				<h2
 					className={cn(
 						'text-grey-15 font-semibold leading-[150%]',
-						'text-lg lg:text-[20px] 2xl:text-2xl'
+						'text-lg lg:text-xl 2xl:text-2xl'
 					)}
 				>
 					{course.title}

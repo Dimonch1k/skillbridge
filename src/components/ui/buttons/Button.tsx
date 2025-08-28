@@ -45,7 +45,7 @@ export const Button: React.FC<ButtonProps> = ({
 	return (
 		<button
 			className={cn(
-				'inline-flex items-center justify-center font-normal gap-2 rounded-md transition-colors duration-300 ease-linear cursor-pointer text-sm xl:text-lg leading-[150%]',
+				'inline-flex items-center justify-center font-normal gap-2 rounded-md transition-colors duration-300 ease-linear cursor-pointer text-sm lg:text-lg leading-[150%]',
 				sizeClasses[size],
 				variantClasses[variant],
 				className,

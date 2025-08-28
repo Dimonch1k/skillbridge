@@ -1,8 +1,8 @@
 'use client'
 
 import { Button } from '@/components/ui/buttons/Button'
-
 import { cn } from '@/utils/cn'
+
 import { Pause, Play } from 'lucide-react'
 import { useState } from 'react'
 

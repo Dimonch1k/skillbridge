@@ -25,7 +25,7 @@ export function PricingListItemFeatures({
 					'bg-white border border-white-95 rounded-t-[10px] lg:rounded-t-[14px]'
 				)}
 			>
-				<h5 className='text-center text-grey-15 text-lg 2xl:text-[20px] font-medium leading-[150%]'>
+				<h5 className='text-center text-grey-15 text-lg 2xl:text-xl font-medium leading-[150%]'>
 					Available Features
 				</h5>
 

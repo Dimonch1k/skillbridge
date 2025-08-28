@@ -34,7 +34,7 @@ export function CourseListItem({ course, className }: CourseListItemProps) {
 			<CourseListItemInfo course={course} />
 
 			<div className='space-y-2.5 2xl:space-y-3.5'>
-				<h5 className='text-grey-15 text-[20px] 2xl:text-2xl font-semibold leading-[150%]'>
+				<h5 className='text-grey-15 text-xl 2xl:text-2xl font-semibold leading-[150%]'>
 					{course.title}
 				</h5>
 

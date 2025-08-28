@@ -23,7 +23,7 @@ export default function NotFound() {
 			<Link
 				href={ROUTES.HOME}
 				className={cn(
-					'text-sm xl:text-lg leading-[150%] font-medium',
+					'text-sm lg:text-lg leading-[150%] font-medium',
 					'mt-8 px-6 py-3',
 					'text-orange-50 hover:text-white bg-transparent hover:bg-orange-50 border-2 border-orange-50',
 					'rounded-xl shadow-lg inline-flex items-center justify-center gap-2',
