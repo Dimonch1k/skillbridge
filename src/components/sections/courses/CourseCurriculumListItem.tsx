@@ -33,7 +33,7 @@ export function CourseCurriculumListItem({
 			<p
 				className={cn(
 					'text-grey-20 font-semibold leading-[150%] tracking-[-0.6%]',
-					'text-lg lg:text-[20px] 2xl:text-2xl'
+					'text-lg lg:text-xl 2xl:text-2xl'
 				)}
 			>
 				{item.title}

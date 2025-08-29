@@ -31,7 +31,7 @@ export function CourseCurriculumListItemLessonList({
 						<h6
 							className={cn(
 								'text-grey-20 font-medium leading-[150%]',
-								'text-base 2xl:text-[20px]'
+								'text-base 2xl:text-xl'
 							)}
 						>
 							{lesson.title}

@@ -2,6 +2,7 @@
 
 import type { ICourse } from '@/types/course.interface'
 import { cn } from '@/utils/cn'
+
 import { CourseCurriculumListItem } from './CourseCurriculumListItem'
 
 export interface CourseCurriculumListProps {

@@ -42,7 +42,7 @@ export function PricingListItem({
 				<div className='text-[50px] lg:text-[60px] 2xl:text-[80px] font-semibold text-grey-15 leading-[73%]'>
 					${price}
 				</div>
-				<div className='text-sm lg:text-base 2xl:text-[20px] font-medium text-grey-30 leading-[73%]'>
+				<div className='text-sm lg:text-base 2xl:text-xl font-medium text-grey-30 leading-[73%]'>
 					/{pricingType}
 				</div>
 			</div>

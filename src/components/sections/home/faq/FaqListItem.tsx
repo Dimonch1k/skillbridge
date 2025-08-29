@@ -23,6 +23,8 @@ export function FaqListItem({
 		<li
 			className={cn(
 				'w-full bg-white rounded-[10px] border border-white-95',
+				'px-6 lg:px-10 2xl:px-12.5',
+				isOpen && 'pb-6 lg:pb-10 2xl:pb-12.5',
 				isOpen && 'space-y-5 lg:space-y-10 2xl:space-y-12.5',
 				className
 			)}

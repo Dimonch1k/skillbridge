@@ -34,7 +34,7 @@ export function CourseListItemInfo({ course }: CourseListItemInfoProps) {
 				</div>
 			</div>
 
-			<p className='text-grey-15 text-base 2xl:text-[20px] font-medium'>
+			<p className='text-grey-15 text-base 2xl:text-xl font-medium'>
 				By {course.author}
 			</p>
 		</div>

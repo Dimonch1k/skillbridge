@@ -14,11 +14,7 @@ export interface FaqListItemAnswerProps {
 export function FaqListItemAnswer({ item, className }: FaqListItemAnswerProps) {
 	return (
 		<div
-			className={cn(
-				'flex flex-col gap-5 lg:gap-10 2xl:gap-12.5',
-				'px-6 lg:px-10 2xl:px-12.5 pb-6 lg:pb-10 2xl:pb-12.5',
-				className
-			)}
+			className={cn('flex flex-col gap-5 lg:gap-10 2xl:gap-12.5', className)}
 		>
 			<p
 				className={cn(
