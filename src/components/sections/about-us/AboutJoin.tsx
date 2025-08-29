@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/buttons/Button'
 import { cn } from '@/utils/cn'
+
 import Image from 'next/image'
 
 export function AboutJoin() {
@@ -41,7 +42,7 @@ export function AboutJoin() {
 				variant='primary'
 				className={cn(
 					'w-fit z-10 text-nowrap font-semibold',
-					'!text-sm 2xl:text-xl',
+					'!text-sm 2xl:!text-xl',
 					'px-5 py-3.5 2xl:px-6 2xl:py-4.5',
 					'rounded-md 2xl:rounded-xl'
 				)}

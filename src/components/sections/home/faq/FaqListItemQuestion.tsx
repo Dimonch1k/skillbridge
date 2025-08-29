@@ -24,9 +24,9 @@ export function FaqListItemQuestion({
 			onClick={openItem}
 			className={cn(
 				'w-full flex items-center gap-10 lg:gap-7.5',
-				'p-6 lg:p-10 2xl:p-12.5',
+				'py-6 lg:py-10 2xl:py-12.5',
 				'text-left focus:outline-none transition-none',
-				isOpen && 'py-5 2xl:py-6 border-b border-white-95',
+				isOpen && 'pb-5 2xl:pb-6 border-b border-white-95',
 				className
 			)}
 		>

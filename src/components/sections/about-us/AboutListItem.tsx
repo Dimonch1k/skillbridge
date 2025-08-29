@@ -21,7 +21,7 @@ export function AboutListItem({ item, className }: AboutListItemProps) {
 		>
 			<div
 				className={cn(
-					'w-fit bg-orange-97 border border-orange-90',
+					'w-fit aspect-square grid place-content-center bg-orange-97 border border-orange-90',
 					'p-3.5 2xl:p-4',
 					'rounded-md 2xl:rounded-lg'
 				)}

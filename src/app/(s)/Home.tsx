@@ -6,10 +6,11 @@ import {
 	CoursesSection,
 	FaqSection,
 	HeroSection,
-	PricingSection,
 	TestimonialsSection,
 	VideoSection
 } from '@/components/sections/home'
+
+import { PricingSection } from '@/components/shared/pricing/PricingSection'
 
 export function Home() {
 	return (
@@ -23,7 +24,10 @@ export function Home() {
 			<BenefitsSection />
 			<CoursesSection />
 			<TestimonialsSection />
-			<PricingSection />
+			<PricingSection
+				hasTitle
+				hasDescription
+			/>
 			<FaqSection />
 		</div>
 	)
