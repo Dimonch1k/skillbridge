@@ -13,15 +13,18 @@ interface UseContactFormProps {
 }
 
 export function useContactForm({
-	successMessage = 'Message sent successfully! I will get back to you soon.',
-	loadingMessage = 'Sending message...',
-	errorMessage = 'Error sending message. Please try again.'
+	successMessage = '✅ Your message was sent! Our team will get back to you shortly.',
+	loadingMessage = '📩 Sending your message...',
+	errorMessage = '❌ Failed to send message. Please try again.'
 }: UseContactFormProps = {}) {
 	const [isSubmitting, setIsSubmitting] = useState(false)
 
 	const getDefaultValues = (): TypeSendMessage => ({
-		name: '',
+		firstName: '',
+		lastName: '',
 		email: '',
+		phone: '',
+		subject: '',
 		message: ''
 	})
 

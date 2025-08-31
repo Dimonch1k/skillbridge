@@ -1,9 +1,10 @@
 'use client'
 
+import { SocialProfileList } from '@/components/layout/footer/SocialProfileList'
+
 import { footerInfoData, footerSocialProfilesData } from '@/data/footer.data'
 import { cn } from '@/utils/cn'
 
-import { SocialProfileList } from '@/components/layout/footer/SocialProfileList'
 import { ContactInfoListItem } from './ContactInfoListItem'
 
 export function ContactInfoList() {

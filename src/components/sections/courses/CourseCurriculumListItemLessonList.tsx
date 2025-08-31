@@ -2,6 +2,7 @@
 
 import type { ICourse } from '@/types/sections/course.interface'
 import { cn } from '@/utils/cn'
+
 import { Clock3 } from 'lucide-react'
 
 export interface CourseCurriculumListItemLessonListProps {
