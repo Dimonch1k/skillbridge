@@ -1,4 +1,4 @@
-import { COURSE_LEVEL, type ICourse } from '@/types/course.interface'
+import { COURSE_LEVEL, type ICourse } from '@/types/sections/course.interface'
 
 export const courseListData: ICourse[] = [
 	{

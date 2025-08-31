@@ -9,7 +9,9 @@ export interface FieldsetProps {
 
 export function Fieldset({ className, children }: FieldsetProps) {
 	return (
-		<fieldset className={cn('flex flex-col gap-1', className)}>
+		<fieldset
+			className={cn('w-full flex flex-col', 'gap-3 2xl:gap-4', className)}
+		>
 			{children}
 		</fieldset>
 	)

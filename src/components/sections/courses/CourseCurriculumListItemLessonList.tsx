@@ -1,7 +1,8 @@
 'use client'
 
-import type { ICourse } from '@/types/course.interface'
+import type { ICourse } from '@/types/sections/course.interface'
 import { cn } from '@/utils/cn'
+
 import { Clock3 } from 'lucide-react'
 
 export interface CourseCurriculumListItemLessonListProps {

@@ -13,6 +13,7 @@ export function PhoneIcon({ color, className }: PhoneIconProps) {
 			height='22'
 			viewBox='0 0 22 22'
 			fill='none'
+			className={className}
 		>
 			<title>Phone</title>
 			<path

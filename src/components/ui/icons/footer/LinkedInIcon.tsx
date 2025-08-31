@@ -13,6 +13,7 @@ export function LinkedInIcon({ color, className }: LinkedInIconProps) {
 			height='20'
 			viewBox='0 0 20 20'
 			fill='none'
+			className={className}
 		>
 			<title>LinkedIn</title>
 			<path

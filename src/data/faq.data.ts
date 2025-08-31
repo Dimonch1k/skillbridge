@@ -1,5 +1,5 @@
 import { ROUTES } from '@/constants/routes.constants'
-import type { IFaq } from '@/types/faq.interface'
+import type { IFaq } from '@/types/sections/faq.interface'
 
 export const faqListData: IFaq[] = [
 	{

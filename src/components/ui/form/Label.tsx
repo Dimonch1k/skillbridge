@@ -13,13 +13,14 @@ export const Label: FC<ILabelProps> = ({
 	htmlFor,
 	children,
 	className,
-	isWarning,
+	isWarning
 }) => {
 	return (
 		<label
 			htmlFor={htmlFor}
 			className={cn(
-				'text-sm font-inter text-foreground ml-1.5 font-medium',
+				'w-full font-be-vietnam-pro font-medium text-grey-15 leading-[150%]',
+				'text-sm lg:text-base 2xl:text-lg',
 				className
 			)}
 		>

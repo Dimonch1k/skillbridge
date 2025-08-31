@@ -13,6 +13,7 @@ export function TwitterIcon({ color, className }: TwitterIconProps) {
 			height='18'
 			viewBox='0 0 20 18'
 			fill='none'
+			className={className}
 		>
 			<title>Twitter</title>
 			<path
