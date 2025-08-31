@@ -16,6 +16,7 @@ export function AbstractLinesIcon({
 			height='43'
 			viewBox='0 0 39 43'
 			fill='none'
+			className={className}
 		>
 			<path
 				fillRule='evenodd'

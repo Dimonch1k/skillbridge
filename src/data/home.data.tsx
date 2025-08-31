@@ -9,7 +9,11 @@ import {
 } from '@/components/ui/icons/home/brands'
 import { ROUTES } from '@/constants/routes.constants'
 
-import type { IBenefit, IBrand, IHomeSection } from '@/types/home.interface'
+import type {
+	IBenefit,
+	IBrand,
+	IHomeSection
+} from '@/types/sections/home.interface'
 
 const brandIconColor = '#4c4c4d'
 const brandIconClassName = 'lg:w-full h-6 lg:h-7 2xl:h-8.5'

@@ -1,7 +1,7 @@
 'use client'
 
 import { ROUTES } from '@/constants/routes.constants'
-import type { IPricing } from '@/types/pricing.interface'
+import type { IPricing } from '@/types/sections/pricing.interface'
 import { cn } from '@/utils/cn'
 
 import { Check, X } from 'lucide-react'

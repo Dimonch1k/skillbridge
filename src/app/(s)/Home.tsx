@@ -9,12 +9,13 @@ import {
 	TestimonialsSection,
 	VideoSection
 } from '@/components/sections/home'
+import { PageContainer } from '@/components/shared/PageContainer'
 
 import { PricingSection } from '@/components/shared/pricing/PricingSection'
 
 export function Home() {
 	return (
-		<div className='w-full flex flex-col gap-12.5 lg:gap-25 2xl:gap-37.5'>
+		<PageContainer className='lg:gap-25 2xl:gap-37.5'>
 			<div>
 				<HeroSection />
 				<BrandsSection />
@@ -29,6 +30,6 @@ export function Home() {
 				hasDescription
 			/>
 			<FaqSection />
-		</div>
+		</PageContainer>
 	)
 }

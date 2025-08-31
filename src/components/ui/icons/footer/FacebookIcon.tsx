@@ -13,6 +13,7 @@ export function FacebookIcon({ color, className }: FacebookIconProps) {
 			height='20'
 			viewBox='0 0 20 20'
 			fill='none'
+			className={className}
 		>
 			<title>Facebook</title>
 			<path

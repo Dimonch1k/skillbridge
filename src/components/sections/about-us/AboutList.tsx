@@ -1,6 +1,6 @@
 'use client'
 
-import type { IAboutItem } from '@/types/about.interface'
+import type { IAboutItem } from '@/types/sections/about.interface'
 import { cn } from '@/utils/cn'
 
 import { AboutListItem } from './AboutListItem'

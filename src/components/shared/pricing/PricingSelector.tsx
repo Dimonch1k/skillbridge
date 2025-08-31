@@ -3,7 +3,7 @@
 import { Button } from '@/components/ui/buttons/Button'
 
 import { pricingSelectorsData } from '@/data/pricing.data'
-import type { TypePricing } from '@/types/pricing.interface'
+import type { TypePricing } from '@/types/sections/pricing.interface'
 import { cn } from '@/utils/cn'
 
 export interface PricingSelectorProps {

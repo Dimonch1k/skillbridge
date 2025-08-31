@@ -1,7 +1,7 @@
 'use client'
 
 import { ROUTES } from '@/constants/routes.constants'
-import type { ITestimonial } from '@/types/testimonial.interface'
+import type { ITestimonial } from '@/types/sections/testimonial.interface'
 import { cn } from '@/utils/cn'
 
 import Image from 'next/image'

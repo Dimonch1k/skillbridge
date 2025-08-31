@@ -2,7 +2,7 @@
 
 import { CourseListItemInfo } from '@/components/shared/courses/CourseListItemInfo'
 
-import type { ICourse } from '@/types/course.interface'
+import type { ICourse } from '@/types/sections/course.interface'
 import { cn } from '@/utils/cn'
 
 import { CourseListItemCurriculum } from './CourseListItemCurriculum'

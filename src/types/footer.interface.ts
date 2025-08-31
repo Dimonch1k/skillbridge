@@ -1,6 +1,7 @@
 export interface IFooterInfo {
 	icon: React.ReactNode
 	text: string
+	href: string
 }
 
 export interface IFooterLink {

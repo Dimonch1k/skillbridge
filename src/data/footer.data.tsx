@@ -19,11 +19,20 @@ import type {
 const footerIconColor = '#262626'
 
 export const footerInfoData: IFooterInfo[] = [
-	{ icon: <MailIcon color={footerIconColor} />, text: 'hello@skillbridge.com' },
-	{ icon: <PhoneIcon color={footerIconColor} />, text: '+91 91813 23 2309' },
+	{
+		icon: <MailIcon color={footerIconColor} />,
+		text: 'hello@skillbridge.com',
+		href: 'mailto:hello@skillbridge.com'
+	},
+	{
+		icon: <PhoneIcon color={footerIconColor} />,
+		text: '+91 91813 23 2309',
+		href: 'tel:+9191813232309'
+	},
 	{
 		icon: <MapPinIcon color={footerIconColor} />,
-		text: 'Somewhere in the World'
+		text: 'Some Where in the World',
+		href: 'https://www.google.com/maps'
 	}
 ]
 

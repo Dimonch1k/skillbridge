@@ -9,7 +9,7 @@ import {
 	PuzzleIcon
 } from '@/components/ui/icons/about'
 
-import type { IAboutItem } from '@/types/about.interface'
+import type { IAboutItem } from '@/types/sections/about.interface'
 
 const aboutIconColor = '#ff9500'
 

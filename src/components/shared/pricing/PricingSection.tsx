@@ -4,7 +4,7 @@ import { PricingSelector } from '@/components/shared/pricing/PricingSelector'
 import { Section } from '@/components/ui/Section'
 
 import { pricingListData } from '@/data/pricing.data'
-import type { TypePricing } from '@/types/pricing.interface'
+import type { TypePricing } from '@/types/sections/pricing.interface'
 
 import { useState } from 'react'
 

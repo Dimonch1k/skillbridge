@@ -1,4 +1,4 @@
-import { ITestimonial } from '@/types/testimonial.interface'
+import type { ITestimonial } from '@/types/sections/testimonial.interface'
 
 export const testimonialListData: ITestimonial[] = [
 	{

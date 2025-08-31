@@ -1,6 +1,6 @@
 'use client'
 
-import type { IFaq } from '@/types/faq.interface'
+import type { IFaq } from '@/types/sections/faq.interface'
 import { cn } from '@/utils/cn'
 
 import { useState } from 'react'

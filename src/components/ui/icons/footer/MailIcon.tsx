@@ -13,6 +13,7 @@ export function MailIcon({ color, className }: MailIconProps) {
 			height='18'
 			viewBox='0 0 22 18'
 			fill='none'
+			className={className}
 		>
 			<title>Mail</title>
 			<path

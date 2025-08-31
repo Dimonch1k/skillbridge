@@ -1,4 +1,4 @@
-import type { IPricing, TypePricing } from '@/types/pricing.interface'
+import type { IPricing, TypePricing } from '@/types/sections/pricing.interface'
 
 export const pricingSelectorsData: {
 	title: string

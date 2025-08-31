@@ -1,6 +1,6 @@
 'use client'
 
-import type { ITestimonial } from '@/types/testimonial.interface'
+import type { ITestimonial } from '@/types/sections/testimonial.interface'
 import { cn } from '@/utils/cn'
 
 import { TestimonialListItem } from './TestimonialListItem'

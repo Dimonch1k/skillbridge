@@ -3,7 +3,7 @@
 import { CourseListItemInfo } from '@/components/shared/courses/CourseListItemInfo'
 
 import { ROUTES } from '@/constants/routes.constants'
-import type { ICourse } from '@/types/course.interface'
+import type { ICourse } from '@/types/sections/course.interface'
 import { cn } from '@/utils/cn'
 
 import Image from 'next/image'
