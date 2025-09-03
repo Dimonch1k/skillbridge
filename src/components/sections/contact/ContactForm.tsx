@@ -23,9 +23,10 @@ export function ContactForm() {
 		isSubmitting,
 		onSubmit
 	} = useContactForm({
-		successMessage: 'Thank you for your message! I will get back to you soon.',
-		loadingMessage: 'Sending message...',
-		errorMessage: 'Error sending message. Please try again.'
+		successMessage:
+			'Your message was sent! Our team will get back to you shortly.',
+		loadingMessage: '📩 Sending your message...',
+		errorMessage: 'Failed to send message. Please try again.'
 	})
 
 	return (

@@ -6,13 +6,15 @@ import {
 	FormInputField,
 	Label
 } from '@/components/ui/form'
+
+import type { TypeLoginFormState } from '@/types/auth.types'
 import type { TypeSendMessage } from '@/types/send-message.types'
 
 import { FieldErrors, UseFormRegister } from 'react-hook-form'
 
 export interface EmailFieldProps {
-	register: UseFormRegister<TypeSendMessage>
-	errors: FieldErrors<TypeSendMessage>
+	register: UseFormRegister<TypeLoginFormState | TypeSendMessage>
+	errors: FieldErrors<TypeLoginFormState | TypeSendMessage>
 }
 
 export function EmailField({ register, errors }: EmailFieldProps) {
