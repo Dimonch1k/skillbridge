@@ -1,11 +1,11 @@
 'use client'
 
-import type { ITestimonial } from '@/types/sections/testimonial.interface'
-import { cn } from '@/utils/cn'
-
 import { Button } from '@/components/ui/buttons/Button'
 import { MoveLeftIcon } from '@/components/ui/icons/testimonial/MoveLeftIcon'
 import { MoveRightIcon } from '@/components/ui/icons/testimonial/MoveRightIcon'
+
+import type { ITestimonial } from '@/types/sections/testimonial.interface'
+import { cn } from '@/utils/cn'
 
 import { useState } from 'react'
 

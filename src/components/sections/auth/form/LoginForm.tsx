@@ -1,9 +1,9 @@
 'use client'
 
 import { Button } from '@/components/ui/buttons/Button'
-import { EmailField } from '@/components/ui/form/fields'
-import { PasswordField } from '@/components/ui/form/fields/PasswordField'
-import { RememberMeCheckbox } from '@/components/ui/form/fields/RememberMeCheckbox'
+import { LoginEmailField } from '@/components/ui/form/fields/auth/LoginEmailField'
+import { LoginPasswordField } from '@/components/ui/form/fields/auth/LoginPasswordField'
+import { RememberMeCheckbox } from '@/components/ui/form/fields/auth/RememberMeCheckbox'
 
 import { useLoginForm } from '@/hooks/useLoginForm'
 import { cn } from '@/utils/cn'
@@ -30,11 +30,11 @@ export function LoginForm({ className }: LoginFormProps) {
 			onSubmit={handleSubmit(onSubmit)}
 			className={cn('grid', 'gap-5 2xl:gap-6', className)}
 		>
-			<EmailField
+			<LoginEmailField
 				register={register}
 				errors={errors}
 			/>
-			<PasswordField
+			<LoginPasswordField
 				register={register}
 				errors={errors}
 				isLogin

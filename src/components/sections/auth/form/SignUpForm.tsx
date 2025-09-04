@@ -1,10 +1,10 @@
 'use client'
 
 import { Button } from '@/components/ui/buttons/Button'
-import { EmailField } from '@/components/ui/form/fields'
-import { AgreeTermsCheckbox } from '@/components/ui/form/fields/AgreeTermsCheckbox'
-import { FullNameField } from '@/components/ui/form/fields/FullNameField'
-import { PasswordField } from '@/components/ui/form/fields/PasswordField'
+import { AgreeTermsCheckbox } from '@/components/ui/form/fields/auth/AgreeTermsCheckbox'
+import { FullNameField } from '@/components/ui/form/fields/auth/FullNameField'
+import { SignUpEmailField } from '@/components/ui/form/fields/auth/SignUpEmailField'
+import { SignUpPasswordField } from '@/components/ui/form/fields/auth/SignUpPasswordField'
 
 import { useSignUpForm } from '@/hooks/useSignUpForm'
 
@@ -36,11 +36,11 @@ export function SignUpForm({ className }: SignUpFormProps) {
 				register={register}
 				errors={errors}
 			/>
-			<EmailField
+			<SignUpEmailField
 				register={register}
 				errors={errors}
 			/>
-			<PasswordField
+			<SignUpPasswordField
 				register={register}
 				errors={errors}
 			/>

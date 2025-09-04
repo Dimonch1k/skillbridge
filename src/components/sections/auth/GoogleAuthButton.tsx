@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/buttons/Button'
 import { GoogleIcon } from '@/components/ui/icons/auth/GoogleIcon'
+
 import type { TypeAuth } from '@/types/auth.types'
 import { cn } from '@/utils/cn'
 

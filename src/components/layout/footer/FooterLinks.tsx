@@ -3,6 +3,7 @@
 import { footerLinksData, footerSocialProfilesData } from '@/data/footer.data'
 
 import Link from 'next/link'
+
 import { SocialProfileList } from './SocialProfileList'
 
 export function FooterLinks() {
@@ -21,7 +22,6 @@ export function FooterLinks() {
 							{item.list.map((item, i2) => (
 								<li key={i2}>
 									<Link
-										target='_blank'
 										href={item.href}
 										className='text-nowrap hover:text-orange-50 transition-colors duration-100 ease-linear'
 									>

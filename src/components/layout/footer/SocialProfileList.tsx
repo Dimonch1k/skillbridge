@@ -20,6 +20,7 @@ export function SocialProfileList({ list, className }: SocialProfileListProps) {
 					title={item.title}
 				>
 					<Link
+						target='_blank'
 						href={item.href}
 						className='bg-white-97 hover:bg-orange-97 border border-white-95 hover:border-orange-90 rounded-md 2xl:rounded-lg p-3 2xl:p-3.5 transition-colors duration-200 ease-linear'
 					>

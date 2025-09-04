@@ -2,7 +2,7 @@
 
 import { Button } from '@/components/ui/buttons/Button'
 import {
-	EmailField,
+	ContactEmailField,
 	FirstNameField,
 	LastNameField,
 	MessageField,
@@ -51,7 +51,7 @@ export function ContactForm() {
 				</div>
 
 				<div className='w-full space-y-5 lg:space-y-0 lg:flex lg:gap-6 2xl:gap-7.5'>
-					<EmailField
+					<ContactEmailField
 						register={register}
 						errors={errors}
 					/>

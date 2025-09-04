@@ -1,8 +1,6 @@
 'use client'
 
-import { EyeClosedIcon } from 'lucide-react'
-
-import { EyeIcon } from 'lucide-react'
+import { EyeClosedIcon, EyeIcon } from 'lucide-react'
 
 interface IShowPasswordButtonProps {
 	showPassword: boolean

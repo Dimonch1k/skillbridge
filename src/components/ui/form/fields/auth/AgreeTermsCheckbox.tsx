@@ -1,11 +1,11 @@
 'use client'
 
 import { Fieldset, Label } from '@/components/ui/form'
+
 import { ROUTES } from '@/constants/routes.constants'
-
 import type { TypeSignUpFormState } from '@/types/auth.types'
-import Link from 'next/link'
 
+import Link from 'next/link'
 import { UseFormRegister } from 'react-hook-form'
 
 export interface AgreeTermsCheckboxProps {

@@ -1,5 +1,6 @@
 'use client'
 
+import type { TypeAuth } from '@/types/auth.types'
 import { cn } from '@/utils/cn'
 
 import { AuthSectionFooter } from './AuthSectionFooter'
@@ -10,7 +11,7 @@ import { LoginForm } from './form/LoginForm'
 import { SignUpForm } from './form/SignUpForm'
 
 export interface AuthSectionProps {
-	authType: 'login' | 'register'
+	authType: TypeAuth
 	title: string
 	subTitle: string
 	className?: string

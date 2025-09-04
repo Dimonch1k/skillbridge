@@ -9,27 +9,24 @@ import {
 } from '@/components/ui/form'
 
 import { ROUTES } from '@/constants/routes.constants'
-import type {
-	TypeLoginFormState,
-	TypeSignUpFormState
-} from '@/types/auth.types'
+import type { TypeSignUpFormState } from '@/types/auth.types'
 import { cn } from '@/utils/cn'
 
 import Link from 'next/link'
 import { useState } from 'react'
 import { FieldErrors, UseFormRegister } from 'react-hook-form'
 
-export interface PasswordFieldProps {
-	register: UseFormRegister<TypeLoginFormState | TypeSignUpFormState>
-	errors: FieldErrors<TypeLoginFormState | TypeSignUpFormState>
+export interface SignUpPasswordFieldProps {
+	register: UseFormRegister<TypeSignUpFormState>
+	errors: FieldErrors<TypeSignUpFormState>
 	isLogin?: boolean
 }
 
-export function PasswordField({
+export function SignUpPasswordField({
 	register,
 	errors,
 	isLogin
-}: PasswordFieldProps) {
+}: SignUpPasswordFieldProps) {
 	const [showPassword, setShowPassword] = useState(false)
 
 	return (
