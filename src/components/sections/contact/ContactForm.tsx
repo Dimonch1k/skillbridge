@@ -2,7 +2,7 @@
 
 import { Button } from '@/components/ui/buttons/Button'
 import {
-	EmailField,
+	ContactEmailField,
 	FirstNameField,
 	LastNameField,
 	MessageField,
@@ -23,9 +23,10 @@ export function ContactForm() {
 		isSubmitting,
 		onSubmit
 	} = useContactForm({
-		successMessage: 'Thank you for your message! I will get back to you soon.',
-		loadingMessage: 'Sending message...',
-		errorMessage: 'Error sending message. Please try again.'
+		successMessage:
+			'Your message was sent! Our team will get back to you shortly.',
+		loadingMessage: '📩 Sending your message...',
+		errorMessage: 'Failed to send message. Please try again.'
 	})
 
 	return (
@@ -50,7 +51,7 @@ export function ContactForm() {
 				</div>
 
 				<div className='w-full space-y-5 lg:space-y-0 lg:flex lg:gap-6 2xl:gap-7.5'>
-					<EmailField
+					<ContactEmailField
 						register={register}
 						errors={errors}
 					/>

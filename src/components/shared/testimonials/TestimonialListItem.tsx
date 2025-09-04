@@ -9,11 +9,13 @@ import Link from 'next/link'
 
 export interface TestimonialListItemProps {
 	item: ITestimonial
+	isSlider?: boolean
 	className?: string
 }
 
 export function TestimonialListItem({
 	item,
+	isSlider = false,
 	className
 }: TestimonialListItemProps) {
 	return (
@@ -63,7 +65,7 @@ export function TestimonialListItem({
 						'px-4 py-3.5 2xl:px-6 2xl:py-4.5'
 					)}
 				>
-					Read Full Story
+					{isSlider ? 'Read More' : 'Read Full Story'}
 				</Link>
 			</div>
 		</li>

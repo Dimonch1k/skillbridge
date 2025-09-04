@@ -6,16 +6,20 @@ import {
 	FormInputField,
 	Label
 } from '@/components/ui/form'
+
 import type { TypeSendMessage } from '@/types/send-message.types'
 
 import { FieldErrors, UseFormRegister } from 'react-hook-form'
 
-export interface EmailFieldProps {
+export interface ContactEmailFieldProps {
 	register: UseFormRegister<TypeSendMessage>
 	errors: FieldErrors<TypeSendMessage>
 }
 
-export function EmailField({ register, errors }: EmailFieldProps) {
+export function ContactEmailField({
+	register,
+	errors
+}: ContactEmailFieldProps) {
 	return (
 		<Fieldset>
 			<Label htmlFor='email'>Email</Label>

@@ -1,0 +1,46 @@
+'use client'
+
+import { Fieldset, Label } from '@/components/ui/form'
+
+import { ROUTES } from '@/constants/routes.constants'
+import type { TypeSignUpFormState } from '@/types/auth.types'
+
+import Link from 'next/link'
+import { UseFormRegister } from 'react-hook-form'
+
+export interface AgreeTermsCheckboxProps {
+	register: UseFormRegister<TypeSignUpFormState>
+}
+
+export function AgreeTermsCheckbox({ register }: AgreeTermsCheckboxProps) {
+	return (
+		<Fieldset className='flex flex-row items-center gap-2 2xl:gap-2.5'>
+			<input
+				id='isAgreeTerms'
+				type='checkbox'
+				{...register('isAgreeTerms')}
+				className='size-6 2xl:size-7.5 border-white-95 accent-orange-90 hover:accent-orange-80'
+			/>
+
+			<Label
+				htmlFor='isAgreeTerms'
+				className='text-grey-40 font-normal leading-[150%]'
+			>
+				I agree with{' '}
+				<Link
+					href={ROUTES.SIGN_UP}
+					className='underline'
+				>
+					Terms of Use
+				</Link>{' '}
+				and{' '}
+				<Link
+					href={ROUTES.SIGN_UP}
+					className='underline'
+				>
+					Privacy Policy
+				</Link>
+			</Label>
+		</Fieldset>
+	)
+}

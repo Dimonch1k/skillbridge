@@ -1,4 +1,4 @@
-import type { TypeSendMessage } from '@/types/send-message.types'
+import type { TypeSignUpFormState } from '@/types/auth.types'
 import { displayError } from '@/utils/display-error'
 
 import axios from 'axios'
@@ -6,39 +6,36 @@ import { useState } from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import toast from 'react-hot-toast'
 
-interface UseContactFormProps {
+interface UseSignUpFormProps {
 	successMessage?: string
 	loadingMessage?: string
 	errorMessage?: string
 }
 
-export function useContactForm({
-	successMessage = 'Your message was sent! Our team will get back to you shortly.',
-	loadingMessage = '📩 Sending your message...',
-	errorMessage = 'Failed to send message. Please try again.'
-}: UseContactFormProps = {}) {
+export function useSignUpForm({
+	successMessage = 'You signed up successfully',
+	loadingMessage = 'Signing up...',
+	errorMessage = 'Failed to sign up. Please try again.'
+}: UseSignUpFormProps = {}) {
 	const [isSubmitting, setIsSubmitting] = useState(false)
 
-	const getDefaultValues = (): TypeSendMessage => ({
-		firstName: '',
-		lastName: '',
+	const getDefaultValues = (): TypeSignUpFormState => ({
+		fullName: '',
 		email: '',
-		phone: '',
-		subject: '',
-		message: ''
+		password: ''
 	})
 
-	const form = useForm<TypeSendMessage>({
+	const form = useForm<TypeSignUpFormState>({
 		mode: 'onSubmit',
 		defaultValues: getDefaultValues()
 	})
 
-	const onSubmit: SubmitHandler<TypeSendMessage> = async data => {
+	const onSubmit: SubmitHandler<TypeSignUpFormState> = async data => {
 		setIsSubmitting(true)
 		const loadingToast = toast.loading(loadingMessage)
 
 		try {
-			const response = await axios.post('/api/send-contact-email', data, {
+			const response = await axios.post('/api/register', data, {
 				headers: { 'Content-Type': 'application/json' },
 				timeout: 15000
 			})
