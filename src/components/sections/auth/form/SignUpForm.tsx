@@ -1,10 +1,12 @@
 'use client'
 
 import { Button } from '@/components/ui/buttons/Button'
-import { AgreeTermsCheckbox } from '@/components/ui/form/fields/auth/AgreeTermsCheckbox'
-import { FullNameField } from '@/components/ui/form/fields/auth/FullNameField'
-import { SignUpEmailField } from '@/components/ui/form/fields/auth/SignUpEmailField'
-import { SignUpPasswordField } from '@/components/ui/form/fields/auth/SignUpPasswordField'
+import {
+	AgreeTermsCheckbox,
+	FullNameField,
+	SignUpEmailField,
+	SignUpPasswordField
+} from '@/components/ui/form/fields'
 
 import { useSignUpForm } from '@/hooks/useSignUpForm'
 

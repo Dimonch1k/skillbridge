@@ -1,9 +1,11 @@
 'use client'
 
 import { Button } from '@/components/ui/buttons/Button'
-import { LoginEmailField } from '@/components/ui/form/fields/auth/LoginEmailField'
-import { LoginPasswordField } from '@/components/ui/form/fields/auth/LoginPasswordField'
-import { RememberMeCheckbox } from '@/components/ui/form/fields/auth/RememberMeCheckbox'
+import {
+	LoginEmailField,
+	LoginPasswordField,
+	RememberMeCheckbox
+} from '@/components/ui/form/fields'
 
 import { useLoginForm } from '@/hooks/useLoginForm'
 import { cn } from '@/utils/cn'
