@@ -24,9 +24,9 @@ export function SignUpForm({ className }: SignUpFormProps) {
 		isSubmitting,
 		onSubmit
 	} = useSignUpForm({
-		successMessage: 'You signed up successfully',
-		loadingMessage: 'Signing up...',
-		errorMessage: 'Failed to sign up. Please try again.'
+		success_message: 'You signed up successfully',
+		loading_message: 'Signing up...',
+		error_message: 'Failed to sign up. Please try again.'
 	})
 
 	return (

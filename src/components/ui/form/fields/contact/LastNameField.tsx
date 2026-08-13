@@ -8,16 +8,16 @@ import {
 } from '@/components/ui/form'
 import type { FormFieldProps } from '@/types/form-field.interface'
 
-export function LastNameField({ register, errors }: FormFieldProps) {
+export function last_nameField({ register, errors }: FormFieldProps) {
 	return (
 		<Fieldset>
-			<Label htmlFor='lastName'>Last Name</Label>
+			<Label htmlFor='last_name'>Last Name</Label>
 			<FormInputField
-				id='lastName'
+				id='last_name'
 				type='text'
 				placeholder='Enter Last Name'
-				error={!!errors.lastName}
-				{...register('lastName', {
+				error={!!errors.last_name}
+				{...register('last_name', {
 					required: 'Last Name is required',
 					minLength: {
 						value: 2,
@@ -29,7 +29,7 @@ export function LastNameField({ register, errors }: FormFieldProps) {
 					}
 				})}
 			/>
-			<ErrorMessage error={errors.lastName?.message as string} />
+			<ErrorMessage error={errors.last_name?.message as string} />
 		</Fieldset>
 	)
 }

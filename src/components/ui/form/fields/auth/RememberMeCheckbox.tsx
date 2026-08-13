@@ -17,9 +17,9 @@ export function RememberMeCheckbox({ register }: RememberMeCheckboxProps) {
 	return (
 		<Fieldset className='flex flex-row items-center gap-2 2xl:gap-2.5'>
 			<input
-				id='isRememberMe'
+				id='is_remember_me'
 				type='checkbox'
-				{...register('isRememberMe')}
+				{...register('is_remember_me')}
 				className='size-6 2xl:size-7.5 border-white-95 accent-orange-90 hover:accent-orange-80'
 			/>
 			<Label

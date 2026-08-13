@@ -9,8 +9,8 @@ export async function POST(request: NextRequest) {
 
 		// Validate required fields
 		if (
-			!data.firstName ||
-			!data.lastName ||
+			!data.first_name ||
+			!data.last_name ||
 			!data.email ||
 			!data.phone ||
 			!data.subject
@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
 			return NextResponse.json(
 				{
 					error:
-						'Required fields: firstName, lastName, email, phone, and subject'
+						'Required fields: first_name, last_name, email, phone, and subject'
 				},
 				{ status: 400 }
 			)
@@ -35,8 +35,8 @@ export async function POST(request: NextRequest) {
 
 		// Send contact email
 		await emailService.sendContactEmail({
-			firstName: data.firstName,
-			lastName: data.lastName,
+			first_name: data.first_name,
+			last_name: data.last_name,
 			email: data.email,
 			phone: data.phone,
 			subject: data.subject,

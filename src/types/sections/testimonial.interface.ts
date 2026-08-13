@@ -4,6 +4,6 @@ export interface ITestimonial {
 
 	profile: {
 		src: string
-		fullName: string
+		full_name: string
 	}
 }

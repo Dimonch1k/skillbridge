@@ -7,21 +7,21 @@ import { SubmitHandler, useForm } from 'react-hook-form'
 import toast from 'react-hot-toast'
 
 interface UseContactFormProps {
-	successMessage?: string
-	loadingMessage?: string
-	errorMessage?: string
+	success_message?: string
+	loading_message?: string
+	error_message?: string
 }
 
 export function useContactForm({
-	successMessage = 'Your message was sent! Our team will get back to you shortly.',
-	loadingMessage = '📩 Sending your message...',
-	errorMessage = 'Failed to send message. Please try again.'
+	success_message = 'Your message was sent! Our team will get back to you shortly.',
+	loading_message = '📩 Sending your message...',
+	error_message = 'Failed to send message. Please try again.'
 }: UseContactFormProps = {}) {
 	const [isSubmitting, setIsSubmitting] = useState(false)
 
 	const getDefaultValues = (): TypeSendMessage => ({
-		firstName: '',
-		lastName: '',
+		first_name: '',
+		last_name: '',
 		email: '',
 		phone: '',
 		subject: '',
@@ -35,7 +35,7 @@ export function useContactForm({
 
 	const onSubmit: SubmitHandler<TypeSendMessage> = async data => {
 		setIsSubmitting(true)
-		const loadingToast = toast.loading(loadingMessage)
+		const loadingToast = toast.loading(loading_message)
 
 		try {
 			const response = await axios.post('/api/send-contact-email', data, {
@@ -46,13 +46,13 @@ export function useContactForm({
 			toast.dismiss(loadingToast)
 
 			if (response.data?.success) {
-				toast.success(successMessage, { duration: 5000 })
+				toast.success(success_message, { duration: 5000 })
 				form.reset(getDefaultValues())
 			} else {
 				throw new Error(response.data?.error || 'Something went wrong')
 			}
 		} catch (error: any) {
-			displayError(loadingToast, error, errorMessage)
+			displayError(loadingToast, error, error_message)
 		} finally {
 			setIsSubmitting(false)
 		}

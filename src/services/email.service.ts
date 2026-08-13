@@ -17,7 +17,7 @@ class EmailService {
 	}
 
 	async sendContactEmail(data: TypeSendMessage) {
-		const fullName = `${data.firstName} ${data.lastName}`.trim()
+		const full_name = `${data.first_name} ${data.last_name}`.trim()
 
 		const promises = []
 
@@ -25,10 +25,10 @@ class EmailService {
 		const adminMailOptions = {
 			from: process.env.EMAIL_USER,
 			to: process.env.ADMIN_EMAIL || process.env.EMAIL_USER,
-			subject: `📩 New Contact Request from ${fullName}`,
+			subject: `📩 New Contact Request from ${full_name}`,
 			html: `
 				<h2>New Contact Request - SkillBridge</h2>
-				<p><strong>Name:</strong> ${fullName}</p>
+				<p><strong>Name:</strong> ${full_name}</p>
 				<p><strong>Email:</strong> ${data.email}</p>
 				<p><strong>Phone:</strong> ${data.phone}</p>
 				<p><strong>Subject:</strong> ${data.subject}</p>
@@ -44,9 +44,9 @@ class EmailService {
 		const autoReplyOptions = {
 			from: process.env.EMAIL_USER,
 			to: data.email,
-			subject: `📚 Thanks for reaching out, ${data.firstName}!`,
+			subject: `📚 Thanks for reaching out, ${data.first_name}!`,
 			html: `
-				<h2>Hi ${data.firstName},</h2>
+				<h2>Hi ${data.first_name},</h2>
 				<p>Thank you for contacting <strong>SkillBridge</strong>! 🎓</p>
 				<p>We’ve received your message regarding <strong>${data.subject}</strong>. Our team will review it carefully and get back to you within 24–48 hours.</p>
 

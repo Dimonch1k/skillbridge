@@ -1,14 +1,14 @@
 export type TypeLoginFormState = {
 	email: string
 	password: string
-	isRememberMe?: boolean
+	is_remember_me?: boolean
 }
 
 export type TypeSignUpFormState = {
-	fullName: string
+	full_name: string
 	email: string
 	password: string
-	isAgreeTerms?: boolean
+	is_agree_terms?: boolean
 }
 
 export type TypeAuth = 'login' | 'register'

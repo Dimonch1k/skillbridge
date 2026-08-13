@@ -7,15 +7,15 @@ import { SubmitHandler, useForm } from 'react-hook-form'
 import toast from 'react-hot-toast'
 
 interface UseLoginFormProps {
-	successMessage?: string
-	loadingMessage?: string
-	errorMessage?: string
+	success_message?: string
+	loading_message?: string
+	error_message?: string
 }
 
 export function useLoginForm({
-	successMessage = 'You logged in successfully',
-	loadingMessage = 'Logging...',
-	errorMessage = 'Failed to log into account. Please try again.'
+	success_message = 'You logged in successfully',
+	loading_message = 'Logging...',
+	error_message = 'Failed to log into account. Please try again.'
 }: UseLoginFormProps = {}) {
 	const [isSubmitting, setIsSubmitting] = useState(false)
 
@@ -31,7 +31,7 @@ export function useLoginForm({
 
 	const onSubmit: SubmitHandler<TypeLoginFormState> = async data => {
 		setIsSubmitting(true)
-		const loadingToast = toast.loading(loadingMessage)
+		const loadingToast = toast.loading(loading_message)
 
 		try {
 			const response = await axios.post('/api/login', data, {
@@ -42,13 +42,13 @@ export function useLoginForm({
 			toast.dismiss(loadingToast)
 
 			if (response.data?.success) {
-				toast.success(successMessage, { duration: 5000 })
+				toast.success(success_message, { duration: 5000 })
 				form.reset(getDefaultValues())
 			} else {
 				throw new Error(response.data?.error || 'Something went wrong')
 			}
 		} catch (error: any) {
-			displayError(loadingToast, error, errorMessage)
+			displayError(loadingToast, error, error_message)
 		} finally {
 			setIsSubmitting(false)
 		}

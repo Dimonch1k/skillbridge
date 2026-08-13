@@ -22,9 +22,9 @@ export function LoginForm({ className }: LoginFormProps) {
 		isSubmitting,
 		onSubmit
 	} = useLoginForm({
-		successMessage: 'You logged in successfully',
-		loadingMessage: 'Logging...',
-		errorMessage: 'Failed to log into account. Please try again.'
+		success_message: 'You logged in successfully',
+		loading_message: 'Logging...',
+		error_message: 'Failed to log into account. Please try again.'
 	})
 
 	return (

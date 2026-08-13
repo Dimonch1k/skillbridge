@@ -10,28 +10,28 @@ export const displayError = (
 
 	console.error('Contact form submission error:', error)
 
-	let errorMessage = defaultMessage
+	let error_message = defaultMessage
 
 	if (axios.isAxiosError(error)) {
 		const axiosError = error as AxiosError<{ error?: string }>
 
 		if (axiosError.code === 'ECONNABORTED') {
-			errorMessage =
+			error_message =
 				'Request timeout. Please check your internet connection and try again.'
 		} else if (axiosError.response?.status === 400) {
-			errorMessage =
+			error_message =
 				axiosError.response.data?.error || 'Please fill in all required fields.'
 		} else if (axiosError.response?.status === 500) {
-			errorMessage = 'Server error. Please try again later.'
+			error_message = 'Server error. Please try again later.'
 		} else if (axiosError.response?.data?.error) {
-			errorMessage = axiosError.response.data.error
+			error_message = axiosError.response.data.error
 		} else if (!axiosError.response) {
-			errorMessage =
+			error_message =
 				'No connection to server. Please check your internet connection.'
 		}
 	}
 
-	toast.error(errorMessage, {
+	toast.error(error_message, {
 		duration: 7000
 	})
 }

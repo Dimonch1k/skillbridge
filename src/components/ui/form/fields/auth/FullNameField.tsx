@@ -19,13 +19,13 @@ export interface FullNameFieldProps {
 export function FullNameField({ register, errors }: FullNameFieldProps) {
 	return (
 		<Fieldset>
-			<Label htmlFor='fullName'>Full Name</Label>
+			<Label htmlFor='full_name'>Full Name</Label>
 			<FormInputField
-				id='fullName'
+				id='full_name'
 				type='text'
 				placeholder='Enter your Name'
-				error={!!errors.fullName}
-				{...register('fullName', {
+				error={!!errors.full_name}
+				{...register('full_name', {
 					required: 'Full Name is required',
 					minLength: {
 						value: 2,
@@ -37,7 +37,7 @@ export function FullNameField({ register, errors }: FullNameFieldProps) {
 					}
 				})}
 			/>
-			<ErrorMessage error={errors.fullName?.message as string} />
+			<ErrorMessage error={errors.full_name?.message as string} />
 		</Fieldset>
 	)
 }

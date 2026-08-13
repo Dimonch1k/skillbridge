@@ -46,14 +46,14 @@ export function TestimonialListItem({
 				<div className='h-full flex items-center gap-2.5 2xl:gap-3.75'>
 					<Image
 						src={item.profile.src}
-						alt={item.profile.fullName}
+						alt={item.profile.full_name}
 						width={61}
 						height={61}
 						className='size-12.5 2xl:size-15 object-contain rounded-md'
 					/>
 
 					<p className='text-nowrap text-grey-20 text-base 2xl:text-lg font-semibold leading-[150%]'>
-						{item.profile.fullName}
+						{item.profile.full_name}
 					</p>
 				</div>
 

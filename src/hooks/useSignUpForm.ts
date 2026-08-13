@@ -7,20 +7,20 @@ import { SubmitHandler, useForm } from 'react-hook-form'
 import toast from 'react-hot-toast'
 
 interface UseSignUpFormProps {
-	successMessage?: string
-	loadingMessage?: string
-	errorMessage?: string
+	success_message?: string
+	loading_message?: string
+	error_message?: string
 }
 
 export function useSignUpForm({
-	successMessage = 'You signed up successfully',
-	loadingMessage = 'Signing up...',
-	errorMessage = 'Failed to sign up. Please try again.'
+	success_message = 'You signed up successfully',
+	loading_message = 'Signing up...',
+	error_message = 'Failed to sign up. Please try again.'
 }: UseSignUpFormProps = {}) {
 	const [isSubmitting, setIsSubmitting] = useState(false)
 
 	const getDefaultValues = (): TypeSignUpFormState => ({
-		fullName: '',
+		full_name: '',
 		email: '',
 		password: ''
 	})
@@ -32,7 +32,7 @@ export function useSignUpForm({
 
 	const onSubmit: SubmitHandler<TypeSignUpFormState> = async data => {
 		setIsSubmitting(true)
-		const loadingToast = toast.loading(loadingMessage)
+		const loadingToast = toast.loading(loading_message)
 
 		try {
 			const response = await axios.post('/api/register', data, {
@@ -43,13 +43,13 @@ export function useSignUpForm({
 			toast.dismiss(loadingToast)
 
 			if (response.data?.success) {
-				toast.success(successMessage, { duration: 5000 })
+				toast.success(success_message, { duration: 5000 })
 				form.reset(getDefaultValues())
 			} else {
 				throw new Error(response.data?.error || 'Something went wrong')
 			}
 		} catch (error: any) {
-			displayError(loadingToast, error, errorMessage)
+			displayError(loadingToast, error, error_message)
 		} finally {
 			setIsSubmitting(false)
 		}
