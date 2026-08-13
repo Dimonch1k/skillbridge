@@ -9,7 +9,7 @@ import {
 
 import type { FormFieldProps } from '@/types/form-field.interface'
 
-export function first_nameField({ register, errors }: FormFieldProps) {
+export function FirstNameField({ register, errors }: FormFieldProps) {
 	return (
 		<Fieldset>
 			<Label htmlFor='first_name'>First Name</Label>
