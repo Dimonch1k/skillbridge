@@ -1,6 +1,7 @@
 'use client'
 
 import type { IPricing, TypePricing } from '@/types/sections/pricing.interface'
+
 import { cn } from '@/utils/cn'
 
 import { PricingListItemFeatures } from './PricingListItemFeatures'

@@ -1,11 +1,13 @@
 'use client'
 
-import { ROUTES } from '@/constants/routes.constants'
-import type { IPricing } from '@/types/sections/pricing.interface'
-import { cn } from '@/utils/cn'
-
 import { Check, X } from 'lucide-react'
 import Link from 'next/link'
+
+import { ROUTES } from '@/constants/routes.constants'
+
+import type { IPricing } from '@/types/sections/pricing.interface'
+
+import { cn } from '@/utils/cn'
 
 export interface PricingListItemFeaturesProps {
 	features: IPricing['features']

@@ -1,9 +1,10 @@
 'use client'
 
-import type { ICourse } from '@/types/sections/course.interface'
-import { cn } from '@/utils/cn'
-
 import Image from 'next/image'
+
+import type { ICourse } from '@/types/sections/course.interface'
+
+import { cn } from '@/utils/cn'
 
 export interface CourseListItemGalleryProps {
 	course: ICourse

@@ -3,6 +3,7 @@
 import { SocialProfileList } from '@/components/layout/footer/SocialProfileList'
 
 import { footerInfoData, footerSocialProfilesData } from '@/data/footer.data'
+
 import { cn } from '@/utils/cn'
 
 import { ContactInfoListItem } from './ContactInfoListItem'

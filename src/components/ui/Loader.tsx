@@ -1,8 +1,8 @@
 'use client'
 
-import { cn } from '@/utils/cn'
-
 import { Loader as LoaderIcon } from 'lucide-react'
+
+import { cn } from '@/utils/cn'
 
 export interface LoaderProps {
 	className?: string

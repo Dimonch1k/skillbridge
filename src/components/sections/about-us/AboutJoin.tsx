@@ -1,9 +1,10 @@
 'use client'
 
-import { Button } from '@/components/ui/buttons/Button'
-import { cn } from '@/utils/cn'
-
 import Image from 'next/image'
+
+import { Button } from '@/components/ui/buttons/Button'
+
+import { cn } from '@/utils/cn'
 
 export function AboutJoin() {
 	return (

@@ -1,14 +1,15 @@
 'use client'
 
 import type { TypeAuth } from '@/types/auth.types'
+
 import { cn } from '@/utils/cn'
 
 import { AuthSectionFooter } from './AuthSectionFooter'
 import { AuthSectionHeader } from './AuthSectionHeader'
-import { GoogleAuthButton } from './GoogleAuthButton'
-import { OrLine } from './OrLine'
 import { LoginForm } from './form/LoginForm'
 import { SignUpForm } from './form/SignUpForm'
+import { GoogleAuthButton } from './GoogleAuthButton'
+import { OrLine } from './OrLine'
 
 export interface AuthSectionProps {
 	authType: TypeAuth

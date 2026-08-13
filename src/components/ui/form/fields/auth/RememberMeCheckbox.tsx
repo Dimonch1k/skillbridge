@@ -1,13 +1,13 @@
 'use client'
 
+import { UseFormRegister } from 'react-hook-form'
+
 import { Fieldset, Label } from '@/components/ui/form'
 
 import type {
 	TypeLoginFormState,
 	TypeSignUpFormState
 } from '@/types/auth.types'
-
-import { UseFormRegister } from 'react-hook-form'
 
 export interface RememberMeCheckboxProps {
 	register: UseFormRegister<TypeLoginFormState | TypeSignUpFormState>

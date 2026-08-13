@@ -8,6 +8,7 @@ import {
 } from '@/components/ui/icons/footer'
 
 import { ROUTES } from '@/constants/routes.constants'
+
 import { homeSectionsData } from '@/data/home.data'
 
 import type {

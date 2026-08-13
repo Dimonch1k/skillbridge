@@ -1,7 +1,8 @@
-import { emailService } from '@/services/email.service'
+import { NextRequest, NextResponse } from 'next/server'
+
 import type { TypeSendMessage } from '@/types/send-message.types'
 
-import { NextRequest, NextResponse } from 'next/server'
+import { emailService } from '@/services/email.service'
 
 export async function POST(request: NextRequest) {
 	try {

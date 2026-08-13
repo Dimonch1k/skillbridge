@@ -1,10 +1,11 @@
 'use client'
 
-import type { INavItem } from '@/types/nav.interface'
-import { cn } from '@/utils/cn'
-
 import { usePathname } from 'next/navigation'
 import { match } from 'path-to-regexp'
+
+import type { INavItem } from '@/types/nav.interface'
+
+import { cn } from '@/utils/cn'
 
 import { NavListItem } from './NavListItem'
 

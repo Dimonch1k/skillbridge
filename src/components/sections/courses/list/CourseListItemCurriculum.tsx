@@ -1,9 +1,10 @@
 'use client'
 
-import type { ICourse } from '@/types/sections/course.interface'
-import { cn } from '@/utils/cn'
-
 import React from 'react'
+
+import type { ICourse } from '@/types/sections/course.interface'
+
+import { cn } from '@/utils/cn'
 
 export interface CourseListItemCurriculumProps {
 	curriculum: ICourse['curriculum']

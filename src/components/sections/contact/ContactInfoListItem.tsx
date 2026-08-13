@@ -1,9 +1,10 @@
 'use client'
 
-import type { IFooterInfo } from '@/types/footer.interface'
-import { cn } from '@/utils/cn'
-
 import Link from 'next/link'
+
+import type { IFooterInfo } from '@/types/footer.interface'
+
+import { cn } from '@/utils/cn'
 
 export interface ContactInfoListItemProps {
 	item?: IFooterInfo
@@ -41,7 +42,7 @@ export function ContactInfoListItem({
 								{item.icon}
 							</div>
 						</Link>
-				  )}
+					)}
 
 			<span
 				className={cn(

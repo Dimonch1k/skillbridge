@@ -1,10 +1,11 @@
 'use client'
 
-import type { IFaq } from '@/types/sections/faq.interface'
-import { cn } from '@/utils/cn'
-
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
+
+import type { IFaq } from '@/types/sections/faq.interface'
+
+import { cn } from '@/utils/cn'
 
 export interface FaqListItemAnswerProps {
 	item: IFaq

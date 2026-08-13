@@ -1,9 +1,9 @@
 'use client'
 
-import { Button } from '@/components/ui/buttons/Button'
-
-import { AlignRight, X } from 'lucide-react'
 import { forwardRef } from 'react'
+import { AlignRight, X } from 'lucide-react'
+
+import { Button } from '@/components/ui/buttons/Button'
 
 export interface MobileMenuButtonProps {
 	isMenuOpen: boolean

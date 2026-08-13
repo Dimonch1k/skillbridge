@@ -1,10 +1,11 @@
 'use client'
 
-import { ROUTES } from '@/constants/routes.constants'
-import { cn } from '@/utils/cn'
-
 import Image from 'next/image'
 import Link from 'next/link'
+
+import { ROUTES } from '@/constants/routes.constants'
+
+import { cn } from '@/utils/cn'
 
 export interface LogoProps {
 	closeMenu?: () => void

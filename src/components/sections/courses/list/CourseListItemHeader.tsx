@@ -3,7 +3,9 @@
 import { ViewButton } from '@/components/ui/buttons/ViewButton'
 
 import { ROUTES } from '@/constants/routes.constants'
+
 import type { ICourse } from '@/types/sections/course.interface'
+
 import { cn } from '@/utils/cn'
 
 export interface CourseListItemHeaderProps {

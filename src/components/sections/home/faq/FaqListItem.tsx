@@ -1,6 +1,7 @@
 'use client'
 
 import type { IFaq } from '@/types/sections/faq.interface'
+
 import { cn } from '@/utils/cn'
 
 import { FaqListItemAnswer } from './FaqListItemAnswer'

@@ -1,10 +1,10 @@
 'use client'
 
+import { Plus } from 'lucide-react'
+
 import { Button } from '@/components/ui/buttons/Button'
 
 import { cn } from '@/utils/cn'
-
-import { Plus } from 'lucide-react'
 
 export interface FaqListItemQuestionProps {
 	question: string

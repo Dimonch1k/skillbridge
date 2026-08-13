@@ -1,10 +1,11 @@
 'use client'
 
-import { Button } from '@/components/ui/buttons/Button'
-import { ROUTES } from '@/constants/routes.constants'
-
 import { Home, RefreshCcw } from 'lucide-react'
 import Link from 'next/link'
+
+import { Button } from '@/components/ui/buttons/Button'
+
+import { ROUTES } from '@/constants/routes.constants'
 
 export default function Error({ reset }: { reset: () => void }) {
 	return (

@@ -1,6 +1,7 @@
 'use client'
 
 import { Logo } from '@/components/layout/header/Logo'
+
 import { footerInfoData } from '@/data/footer.data'
 
 export function FooterInfo() {

@@ -1,6 +1,7 @@
 'use client'
 
 import type { IBrand } from '@/types/sections/home.interface'
+
 import { cn } from '@/utils/cn'
 
 export interface BrandListProps {

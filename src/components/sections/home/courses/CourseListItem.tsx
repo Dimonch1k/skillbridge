@@ -1,13 +1,15 @@
 'use client'
 
+import Image from 'next/image'
+import Link from 'next/link'
+
 import { CourseListItemInfo } from '@/components/shared/courses/CourseListItemInfo'
 
 import { ROUTES } from '@/constants/routes.constants'
-import type { ICourse } from '@/types/sections/course.interface'
-import { cn } from '@/utils/cn'
 
-import Image from 'next/image'
-import Link from 'next/link'
+import type { ICourse } from '@/types/sections/course.interface'
+
+import { cn } from '@/utils/cn'
 
 export interface CourseListItemProps {
 	course: ICourse

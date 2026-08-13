@@ -1,10 +1,11 @@
 'use client'
 
-import type { IBenefit } from '@/types/sections/home.interface'
-import { cn } from '@/utils/cn'
-
 import { ArrowUpRight } from 'lucide-react'
 import Link from 'next/link'
+
+import type { IBenefit } from '@/types/sections/home.interface'
+
+import { cn } from '@/utils/cn'
 
 export interface BenefitListItemProps {
 	index: number

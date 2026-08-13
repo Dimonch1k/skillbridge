@@ -1,8 +1,8 @@
 'use client'
 
-import { footerLinksData, footerSocialProfilesData } from '@/data/footer.data'
-
 import Link from 'next/link'
+
+import { footerLinksData, footerSocialProfilesData } from '@/data/footer.data'
 
 import { SocialProfileList } from './SocialProfileList'
 

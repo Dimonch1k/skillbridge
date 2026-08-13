@@ -8,7 +8,6 @@ import {
 	HeroSection,
 	VideoSection
 } from '@/components/sections/home'
-
 import { PageContainer } from '@/components/shared/PageContainer'
 import { PricingSection } from '@/components/shared/pricing/PricingSection'
 import { TestimonialsSection } from '@/components/shared/testimonials/TestimonialsSection'

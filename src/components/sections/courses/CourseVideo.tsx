@@ -1,10 +1,10 @@
 'use client'
 
+import Image from 'next/image'
+
 import { VideoButton } from '@/components/shared/VideoButton'
 
 import { cn } from '@/utils/cn'
-
-import Image from 'next/image'
 
 export interface CourseVideoProps {
 	videoSrc: string

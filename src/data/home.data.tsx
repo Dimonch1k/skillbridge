@@ -7,6 +7,7 @@ import {
 	ZapierIcon,
 	ZoomIcon
 } from '@/components/ui/icons/home/brands'
+
 import { ROUTES } from '@/constants/routes.constants'
 
 import type {

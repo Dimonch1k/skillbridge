@@ -1,12 +1,13 @@
 'use client'
 
+import { ArrowUpRight } from 'lucide-react'
+import Link from 'next/link'
+
 import { ROUTES } from '@/constants/routes.constants'
 
 import type { TypeAuth } from '@/types/auth.types'
-import { cn } from '@/utils/cn'
 
-import { ArrowUpRight } from 'lucide-react'
-import Link from 'next/link'
+import { cn } from '@/utils/cn'
 
 export interface AuthSectionFooterProps {
 	authType: TypeAuth

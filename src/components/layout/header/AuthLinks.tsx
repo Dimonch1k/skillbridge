@@ -1,9 +1,10 @@
 'use client'
 
-import { ROUTES } from '@/constants/routes.constants'
-import { cn } from '@/utils/cn'
-
 import Link from 'next/link'
+
+import { ROUTES } from '@/constants/routes.constants'
+
+import { cn } from '@/utils/cn'
 
 export function AuthLinks() {
 	return (

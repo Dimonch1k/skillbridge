@@ -1,9 +1,10 @@
 'use client'
 
-import { ROUTES } from '@/constants/routes.constants'
-import { cn } from '@/utils/cn'
-
 import Link from 'next/link'
+
+import { ROUTES } from '@/constants/routes.constants'
+
+import { cn } from '@/utils/cn'
 
 const linkClassName =
 	'rounded-md text-sm 2xl:text-lg leading-[150%] border px-5 py-3.5 2xl:px-6 2xl:py-4.5'

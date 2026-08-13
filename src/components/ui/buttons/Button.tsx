@@ -1,5 +1,6 @@
-import { cn } from '@/utils/cn'
 import { ForwardedRef, ReactNode } from 'react'
+
+import { cn } from '@/utils/cn'
 
 export interface ButtonProps {
 	children: ReactNode

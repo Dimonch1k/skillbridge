@@ -63,8 +63,8 @@
 	--breakpoint-lg-xl: 72rem;
 
 	--font-inter: var(--font-inter), 'Inter', sans-serif;
-	--font-be-vietnam-pro: var(--font-be-vietnam-pro), 'Be Vietnam Pro',
-		sans-serif;
+	--font-be-vietnam-pro:
+		var(--font-be-vietnam-pro), 'Be Vietnam Pro', sans-serif;
 }
 
 html {

@@ -1,8 +1,9 @@
 'use client'
 
-import { ROUTES } from '@/constants/routes.constants'
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
+
+import { ROUTES } from '@/constants/routes.constants'
 
 export function HeaderBanner() {
 	return (

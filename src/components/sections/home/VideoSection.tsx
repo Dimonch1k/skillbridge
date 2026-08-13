@@ -1,8 +1,8 @@
 'use client'
 
-import { Section } from '@/components/ui/Section'
-
 import Image from 'next/image'
+
+import { Section } from '@/components/ui/Section'
 
 export function VideoSection() {
 	return (

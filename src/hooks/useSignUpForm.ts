@@ -1,10 +1,11 @@
-import type { TypeSignUpFormState } from '@/types/auth.types'
-import { displayError } from '@/utils/display-error'
-
-import axios from 'axios'
 import { useState } from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import toast from 'react-hot-toast'
+import axios from 'axios'
+
+import type { TypeSignUpFormState } from '@/types/auth.types'
+
+import { displayError } from '@/utils/display-error'
 
 interface UseSignUpFormProps {
 	success_message?: string

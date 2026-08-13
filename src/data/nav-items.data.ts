@@ -1,4 +1,5 @@
 import { ROUTES } from '@/constants/routes.constants'
+
 import type { INavItem } from '@/types/nav.interface'
 
 export const navItemsData: INavItem[] = [

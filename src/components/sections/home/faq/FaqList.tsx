@@ -1,9 +1,10 @@
 'use client'
 
-import type { IFaq } from '@/types/sections/faq.interface'
-import { cn } from '@/utils/cn'
-
 import { useState } from 'react'
+
+import type { IFaq } from '@/types/sections/faq.interface'
+
+import { cn } from '@/utils/cn'
 
 import { FaqListItem } from './FaqListItem'
 

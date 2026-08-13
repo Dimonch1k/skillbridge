@@ -1,9 +1,10 @@
 'use client'
 
-import type { INavItem } from '@/types/nav.interface'
-import { cn } from '@/utils/cn'
-
 import Link from 'next/link'
+
+import type { INavItem } from '@/types/nav.interface'
+
+import { cn } from '@/utils/cn'
 
 export interface NavListItemProps {
 	item: INavItem

@@ -2,8 +2,7 @@
 
 import React from 'react'
 
-export interface InputFieldProps
-	extends React.InputHTMLAttributes<HTMLInputElement> {
+export interface InputFieldProps extends React.InputHTMLAttributes<HTMLInputElement> {
 	error?: boolean
 	success?: boolean
 	className?: string

@@ -1,6 +1,7 @@
 'use client'
 
 import type { ICourse } from '@/types/sections/course.interface'
+
 import { cn } from '@/utils/cn'
 
 import { CourseListItem } from './CourseListItem'

@@ -1,5 +1,9 @@
 'use client'
 
+import { useState } from 'react'
+import { FieldErrors, UseFormRegister } from 'react-hook-form'
+import Link from 'next/link'
+
 import {
 	ErrorMessage,
 	Fieldset,
@@ -9,12 +13,10 @@ import {
 } from '@/components/ui/form'
 
 import { ROUTES } from '@/constants/routes.constants'
-import type { TypeLoginFormState } from '@/types/auth.types'
-import { cn } from '@/utils/cn'
 
-import Link from 'next/link'
-import { useState } from 'react'
-import { FieldErrors, UseFormRegister } from 'react-hook-form'
+import type { TypeLoginFormState } from '@/types/auth.types'
+
+import { cn } from '@/utils/cn'
 
 export interface LoginPasswordFieldProps {
 	register: UseFormRegister<TypeLoginFormState>

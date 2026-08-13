@@ -1,10 +1,9 @@
 'use client'
 
-import { PageContainer } from '@/components/shared/PageContainer'
-import { PageHeader } from '@/components/shared/PageHeader'
-
 import { ContactForm } from '@/components/sections/contact/ContactForm'
 import { ContactInfoList } from '@/components/sections/contact/ContactInfoList'
+import { PageContainer } from '@/components/shared/PageContainer'
+import { PageHeader } from '@/components/shared/PageHeader'
 
 export function Contact() {
 	return (

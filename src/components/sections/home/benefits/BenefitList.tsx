@@ -1,6 +1,7 @@
 'use client'
 
 import type { IBenefit } from '@/types/sections/home.interface'
+
 import { cn } from '@/utils/cn'
 
 import { BenefitListItem } from './BenefitListItem'

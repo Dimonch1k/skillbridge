@@ -1,5 +1,7 @@
 'use client'
 
+import { FieldErrors, UseFormRegister } from 'react-hook-form'
+
 import {
 	ErrorMessage,
 	Fieldset,
@@ -8,8 +10,6 @@ import {
 } from '@/components/ui/form'
 
 import type { TypeSignUpFormState } from '@/types/auth.types'
-
-import { FieldErrors, UseFormRegister } from 'react-hook-form'
 
 export interface SignUpEmailFieldProps {
 	register: UseFormRegister<TypeSignUpFormState>

@@ -1,11 +1,12 @@
 import './globals.css'
 
-import { SEO_DESCRIPTION, SITE_NAME } from '@/constants/seo.constants'
-import { cn } from '@/utils/cn'
-
+import { Toaster } from 'react-hot-toast'
 import type { Metadata } from 'next'
 import { Be_Vietnam_Pro, Inter } from 'next/font/google'
-import { Toaster } from 'react-hot-toast'
+
+import { SEO_DESCRIPTION, SITE_NAME } from '@/constants/seo.constants'
+
+import { cn } from '@/utils/cn'
 
 const inter = Inter({
 	variable: '--font-inter',

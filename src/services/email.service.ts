@@ -1,5 +1,6 @@
-import type { TypeSendMessage } from '@/types/send-message.types'
 import nodemailer from 'nodemailer'
+
+import type { TypeSendMessage } from '@/types/send-message.types'
 
 class EmailService {
 	private transporter: nodemailer.Transporter

@@ -1,9 +1,10 @@
 'use client'
 
-import type { IFooterSocialProfileLink } from '@/types/footer.interface'
-import { cn } from '@/utils/cn'
-
 import Link from 'next/link'
+
+import type { IFooterSocialProfileLink } from '@/types/footer.interface'
+
+import { cn } from '@/utils/cn'
 
 export interface SocialProfileListProps {
 	list: IFooterSocialProfileLink[]

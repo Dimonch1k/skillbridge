@@ -1,5 +1,5 @@
-import axios, { AxiosError } from 'axios'
 import toast from 'react-hot-toast'
+import axios, { AxiosError } from 'axios'
 
 export const displayError = (
 	loadingToast: string,

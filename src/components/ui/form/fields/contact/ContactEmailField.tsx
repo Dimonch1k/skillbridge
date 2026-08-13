@@ -1,5 +1,7 @@
 'use client'
 
+import { FieldErrors, UseFormRegister } from 'react-hook-form'
+
 import {
 	ErrorMessage,
 	Fieldset,
@@ -8,8 +10,6 @@ import {
 } from '@/components/ui/form'
 
 import type { TypeSendMessage } from '@/types/send-message.types'
-
-import { FieldErrors, UseFormRegister } from 'react-hook-form'
 
 export interface ContactEmailFieldProps {
 	register: UseFormRegister<TypeSendMessage>

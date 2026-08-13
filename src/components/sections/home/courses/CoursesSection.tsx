@@ -4,6 +4,7 @@ import { ViewButton } from '@/components/ui/buttons/ViewButton'
 import { Section } from '@/components/ui/Section'
 
 import { ROUTES } from '@/constants/routes.constants'
+
 import { courseListData } from '@/data/courses.data'
 
 import { CourseList } from './CourseList'

@@ -4,11 +4,12 @@ import { ViewButton } from '@/components/ui/buttons/ViewButton'
 import { Section } from '@/components/ui/Section'
 
 import { ROUTES } from '@/constants/routes.constants'
+
 import { testimonialListData } from '@/data/testimonials.data'
 
-import { TestimonialList } from './TestimonialList'
-
 import { cn } from '@/utils/cn'
+
+import { TestimonialList } from './TestimonialList'
 
 export interface TestimonialsSectionProps {
 	hasHeaderChildren?: boolean

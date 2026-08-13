@@ -1,8 +1,8 @@
 'use client'
 
-import { cn } from '@/utils/cn'
-
 import Link from 'next/link'
+
+import { cn } from '@/utils/cn'
 
 export interface ViewButtonProps {
 	href: string

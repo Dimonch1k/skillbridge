@@ -3,6 +3,7 @@
 import { Section } from '@/components/ui/Section'
 
 import { brandListData } from '@/data/home.data'
+
 import { cn } from '@/utils/cn'
 
 import { BrandList } from './BrandList'

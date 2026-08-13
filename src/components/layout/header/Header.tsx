@@ -1,9 +1,10 @@
 'use client'
 
-import { navItemsData } from '@/data/nav-items.data'
+import { RefObject, useRef, useState } from 'react'
+
 import { useClickOutside } from '@/hooks/useClickOutside'
 
-import { RefObject, useRef, useState } from 'react'
+import { navItemsData } from '@/data/nav-items.data'
 
 import { AuthLinks } from './AuthLinks'
 import { HeaderBanner } from './HeaderBanner'
